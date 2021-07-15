@@ -1,0 +1,357 @@
+@font-face
+{
+	font-family: inter_semi_bold;
+	src: url("../resources/fonts/inter/Inter-SemiBold.woff2");
+}
+
+#about_diagram
+{
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	height: 45%;
+	pointer-events: none;
+}
+
+#biography
+{
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	width: 85%;
+	transform: translate(-50%, 0%);
+	font-family: inter_semi_bold;
+	font-size: 1.8vw;
+	text-align: center;
+	color: white;
+	pointer-events: all;
+}
+
+#biography em
+{
+	color: rgb(0, 183, 255);
+	font-style: normal;
+}
+
+#biography em:hover
+{
+	text-decoration: underline;
+}
+
+.about_category
+{
+	position: absolute;
+	z-index: 15;
+	transform: translate(-50%, -50%);
+	font-family: inter_extra_bold;
+	font-size: 1.94vw;
+	color: black;
+	white-space: nowrap;
+	pointer-events: none;
+}
+
+.about_category.languages
+{
+	left: 21.12%;
+	top: 36.5%;
+}
+
+.about_category.libraries
+{
+	left: 78.88%;
+	top: 36.7%;
+}
+
+.about_category.softwares
+{
+	left: 21.12%;
+	top: 72.5%;
+}
+
+.about_category.contact
+{
+	left: 78.88%;
+	top: 72.5%;
+}
+
+.logo_board
+{
+	position: absolute;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+	width: 32.25%;
+	height: 19.95%;
+	pointer-events: none;
+}
+
+.logo_board.languages
+{
+	top: 53.1%;
+	left: 21.1%;
+}
+
+.logo_board.libraries
+{
+	top: 53.1%;
+	left: 78.87%;
+}
+
+.logo_board.softwares
+{
+	top: 88.9%;
+	left: 21.1%;
+}
+
+.logo_board.contact
+{
+	top: 88.9%;
+	left: 78.87%;
+}
+
+.logo_board .circle
+{
+	position: absolute;
+	z-index: 15;
+	width: 15.2%;
+	height: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: all;
+}
+
+.logo_board .nothing
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	fill: #D7D7FF;
+	opacity: 0.25;
+}
+
+.logo_board .circle.top_1
+{
+	top: 22.4%;
+}
+
+.logo_board .circle.top_2
+{
+	top: 78%;
+}
+
+.logo_board .circle.left_1
+{
+	left: 7%;
+}
+
+.logo_board .circle.left_2
+{
+	left: 24.3%;
+}
+
+.logo_board .circle.left_3
+{
+	left: 41.5%;
+}
+
+.logo_board .circle.left_4
+{
+	left: 58.7%;
+}
+
+.logo_board .circle.left_5
+{
+	left: 76%;
+}
+
+.logo_board .circle.left_6
+{
+
+	left: 93.15%;
+}
+
+.hexagon
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 90%;
+}
+
+.round
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 92%;
+}
+
+.web
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 82%;
+}
+
+.snake
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 94%;
+}
+
+.sql
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 54%;
+	width: 95%;
+}
+
+.triangle
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 89%;
+}
+
+.square
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 98%;
+}
+
+.pentagon
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 96%;
+}
+
+.ellipse
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 100%;
+}
+
+.hero
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 40%;
+	width: 105%;
+}
+
+.vs
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 90%;
+}
+
+.cube
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 47%;
+	width: 92%;
+}
+
+.sw
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 99%;
+}
+
+.helmet
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 105%;
+}
+
+#sw_star
+{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 17%;
+	left: 95%;
+	z-index: 30;
+	color: white;
+	font-size: 2.2vw;
+	font-family: inter_semi_bold;
+	white-space: nowrap;
+}
+
+#head_logo
+{
+	position: absolute;
+	z-index: 15;
+	top: 54.61%;
+	left: 50%;
+	width: 13.7%;
+	transform: translate(-50%, -50%);
+	pointer-events: all;
+}
+
+#about_svg_background
+{
+	position: absolute;
+	z-index: 10;
+	top: 26%;
+	left: 49.48%;
+	width: 71.5%;
+	transform: translate(-50%, 0%);
+	fill: white;
+	pointer-events: none;
+}
+
+#footer
+{
+	position: absolute;
+	top: 115%;
+	left: 4.7%;
+	width: 85%;
+	font-family: inter_semi_bold;
+	font-size: 1vw;
+	color: white;
+	z-index: 50;
+	pointer-events: all;
+}
+
+#footer em
+{
+	color: rgb(0, 183, 255);
+	font-style: normal;
+}
+
+#footer em:hover
+{
+	text-decoration: underline;
+}

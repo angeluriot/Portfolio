@@ -1,0 +1,27 @@
+#mouse_follower
+{
+	position: fixed;
+	mix-blend-mode: difference;
+	z-index: 1000;
+	pointer-events: none;
+}
+
+#mouse_follower #big
+{
+	position: fixed;
+	fill: white;
+	width: 0%;
+	mix-blend-mode: difference;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+#mouse_follower #small
+{
+	position: fixed;
+	fill: white;
+	width: 0%;
+	mix-blend-mode: difference;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}

@@ -1,0 +1,68 @@
+@font-face
+{
+	font-family: primetime;
+	src: url("../resources/fonts/primetime/PRIMETIME.ttf");
+}
+
+.sub_title
+{
+	position: absolute;
+}
+
+.sub_title .text
+{
+	color: white;
+	font-family: primetime;
+	font-size: 5vw;
+	font-style: italic;
+	white-space: nowrap;
+}
+
+.sub_title.start
+{
+	left: 0%;
+}
+
+#end_title_pro
+{
+	left: 70%;
+}
+
+#end_title_school
+{
+	left: 56.7%;
+}
+
+#end_title_personal
+{
+	left: 49.2%;
+}
+
+#end_title_about
+{
+	left: 50.3%;
+}
+
+#pro
+{
+	position: absolute;
+	height: 0.01%;
+}
+
+#school
+{
+	position: absolute;
+	height: 0.01%;
+}
+
+#personal
+{
+	position: absolute;
+	height: 0.01%;
+}
+
+#about
+{
+	position: absolute;
+	height: 0.01%;
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Angel Uriot projects</title>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+		<script src="libraries/anime/lib/anime.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/cursor.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menu.css"/>
+		<link rel="stylesheet" type="text/css" href="css/title.css"/>
+		<link rel="stylesheet" type="text/css" href="css/titleBackground.css"/>
+		<link rel="stylesheet" type="text/css" href="css/subTitle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/projects.css"/>
+		<link rel="stylesheet" type="text/css" href="css/about.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+		<script type="text/javascript" src="js/subTitle.js"></script>
+		<script type="text/javascript" src="js/cursor.js"></script>
+		<script type="text/javascript" src="js/title.js"></script>
+		<script type="module" src="js/titleBackground.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/projects.js"></script>
+		<script type="text/javascript" src="js/about.js"></script>
+		<script type="module" src="js/script.js"></script>
+	</head>
+	<body>
+		<a id="home"></a>
+		<div id="loading_screen"></div>
+
+		<div id="title_background">
+			<canvas id="canvas"></canvas>
+			<div id="gradiant"></div>
+			<div id="black"></div>
+		</div>
+
+		<div id="mouse_follower">
+			<svg id="big" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+			<svg id="small" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+		</div>
+
+		<div id="my_title">
+			<div id="angel" onclick="document.location='#home';">
+				<div class="letter" id="letter_a"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.74 187.49" class="big_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="a" class="letter_path"><path class="cls-1" d="M15,172.49V54.37A39.37,39.37,0,0,1,54.37,15h0A39.37,39.37,0,0,1,93.74,54.37V172.49"/><path class="cls-1" d="M15 93.74 54.37 93.74 93.74 93.74"/></g></svg></div>
+				<div class="letter" id="letter_n"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.89 108.74" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="n" class="letter_path"><path class="cls-1" d="M15 93.74 15 65.63 15 15"/><path class="cls-1" d="M15,49.94A34.94,34.94,0,0,1,49.94,15h0a34.94,34.94,0,0,1,35,34.94v43.8"/></g></svg></div>
+				<div class="letter" id="letter_g"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.74 187.49" class="low_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="g" class="letter_path"><path class="cls-1" d="M93.74,15V54.37A39.37,39.37,0,1,1,54.37,15,39.36,39.36,0,0,1,93.74,54.37v78.75a39.37,39.37,0,0,1-39.37,39.37h0A39.37,39.37,0,0,1,15,133.12h0"/></g></svg></div>
+				<div class="letter" id="letter_e"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.64 108.74" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="e" class="letter_path"><path class="cls-1" d="M73.15,89A39.37,39.37,0,1,1,89.21,36c4.4,8.34-1.89,18.37-11.32,18.37H15"/></g></svg></div>
+				<div class="letter" id="letter_l"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 187.49" class="big_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="l" class="letter_path"><path class="cls-1" d="M15 172.49 15 119.32 15 15"/></g></svg></div>
+			</div>
+			<div id="uriot" onclick="document.location='#home';">
+				<div class="letter" id="letter_u"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.74 187.49" class="big_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="u" class="letter_path"><path class="cls-1" d="M15,15V133.12a39.37,39.37,0,0,0,39.37,39.37h0a39.37,39.37,0,0,0,39.37-39.37V15"/></g></svg></div>
+				<div class="letter" id="letter_r"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.56 108.74" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="r" class="letter_path"><path class="cls-1" d="M15 93.74 15 75.8 15 15"/><path class="cls-1" d="M15,60.26h0c0-21.74,21.74-39.37,48.56-39.37h0"/></g></svg></div>
+				<div class="letter" id="letter_i"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 128.83" class="point_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="i" class="letter_path"><path class="cls-1" d="M15 113.83 15 84.37 15 55.13"/><path class="cls-1" d="M15 15 15 15"/></g></svg></div>
+				<div class="letter" id="letter_o"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.74 108.74" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="o" class="letter_path"><circle class="cls-1" cx="54.37" cy="54.37" r="39.37"/></g></svg></div>
+				<div class="letter" id="letter_t"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.37 187.49" class="big_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="t" class="letter_path"><path class="cls-1" d="M54.37,172.49h0A39.37,39.37,0,0,1,15,133.12V15"/><path class="cls-1" d="M15 54.37 40.66 54.37 54.37 54.37"/></g></svg></div>
+			</div>
+			<div id="projects" onclick="document.location='#home';">
+				<div class="letter" id="letter_p"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.74 187.49" class="low_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="p" class="letter_path"><path class="cls-1" d="M15,172.49V54.37A39.37,39.37,0,1,1,54.37,93.74,39.37,39.37,0,0,1,15,54.37V15"/></g></svg></div>
+				<div class="letter" id="letter_r"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.56 108.74" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="r" class="letter_path"><path class="cls-1" d="M15 93.74 15 75.8 15 15"/><path class="cls-1" d="M15,60.26h0c0-21.74,21.74-39.37,48.56-39.37h0"/></g></svg></div>
+				<div class="letter" id="letter_o"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.74 108.74" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="o" class="letter_path"><circle class="cls-1" cx="54.37" cy="54.37" r="39.37"/></g></svg></div>
+				<div class="letter" id="letter_j"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.37 188.25" class="low_point_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="j" class="letter_path"><path class="cls-1" d="M54.37 15 54.37 15"></path><path class="cls-1" d="M54.37,55.13v78.74A39.38,39.38,0,0,1,15,173.25h0"/></g></svg></div>
+				<div class="letter" id="letter_e"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.64 108.74" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="e" class="letter_path"><path class="cls-1" d="M73.15,89A39.37,39.37,0,1,1,89.21,36c4.4,8.34-1.89,18.37-11.32,18.37H15"/></g></svg></div>
+				<div class="letter" id="letter_c"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.69 108.74" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="c" class="letter_path"><path class="cls-1" d="M75.69,21.27a39.37,39.37,0,1,0,0,66.2"/></g></svg></div>
+				<div class="letter" id="letter_t"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.37 187.49" class="big_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="t" class="letter_path"><path class="cls-1" d="M54.37,172.49h0A39.37,39.37,0,0,1,15,133.12V15"/><path class="cls-1" d="M15 54.37 40.66 54.37 54.37 54.37"/></g></svg></div>
+				<div class="letter" id="letter_s"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.77 108.8" class="small_letter letter_svg"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;}</style></defs><g id="s" class="letter_path"><path class="cls-1" d="M69.77,15.12,35,15A19.67,19.67,0,0,0,15.21,34.62h0A19.68,19.68,0,0,0,34.82,54.37L50,54.43A19.67,19.67,0,0,1,69.56,74.18h0A19.68,19.68,0,0,1,49.81,93.8L15,93.68"/></g></svg></div>
+			</div>
+		</div>
+
+		<div id="menu">
+
+			<div class="menu_div" id="menu_pro" onclick="document.location='#pro';">
+				<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+				<span class="element"><span class="text"></span></span>
+			</div>
+
+			<div class="menu_div" id="menu_school" onclick="document.location='#school';">
+				<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+				<span class="element"><span class="text"></span></span>
+			</div>
+
+			<div class="menu_div" id="menu_personal" onclick="document.location='#personal';">
+				<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+				<span class="element"><span class="text"></span></span>
+			</div>
+
+			<div class="menu_div" id="menu_about" onclick="document.location='#about';">
+				<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+				<span class="element"><span class="text"></span></span>
+			</div>
+		</div>
+
+		<div id="content">
+			<div id="pro_content">
+				<a id="pro"></a>
+				<div class="sub_title start" id="sub_title_pro">
+					<span class="text"></span>
+				</div>
+
+				<div class="project on_left" id="cea_stage_1">
+					<div class="video_div" onclick="window.open('https://www.cea.fr/english','mywindow');">
+						<div class="lds-ring"><div class="lds-ring-1"></div><div class="lds-ring-2"></div><div class="lds-ring-3"></div><div class="lds-ring-4"></div></div>
+						<img class="html_video" src="resources/shapes/Cea.svg">
+					</div>
+
+					<div class="text_box">
+						<svg class="project_title" preserveAspectRatio viewBox="0 0 400 21">
+							<text class="project_title_text" x="0" y="18">Nuclear reactor simulation<tspan y="17.4" class="project_date">&nbsp;(2019)</tspan></text>
+						</svg>
+
+						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
+							<text x="0" y="0">
+								<tspan x="0" dy="1.25em">A computer simulation predicting the behavior of</tspan>
+								<tspan x="0" dy="1.25em">neutrons in the core of a nuclear reactor using the Monte</tspan>
+								<tspan x="0" dy="1.25em">Carlo method, the goal was to calculate the amount of</tspan>
+								<tspan x="0" dy="1.25em">radiation reaching the reactor's walls. I did this project</tspan>
+								<tspan x="0" dy="1.25em">during my internship at the CEA so the source code is</tspan>
+								<tspan x="0" dy="1.25em">confidential, but you can see my internship report...</tspan>
+							</text>
+						</svg>
+
+						<svg class="tag tag_1" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(31, 52, 240);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">C++</text>
+						</svg>
+
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(240, 121, 24);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">Monte Carlo</text>
+						</svg>
+
+						<div title="Internship report" class="link_button" onclick="window.open('./resources/documents/CEA_2019.pdf','mywindow');">
+							<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+							<svg class="link_button_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.73 25.46"><defs></defs><g id="link_button_g"><path class="link_button_path" d="M21.45,10.51,3.85.35A2.57,2.57,0,0,0,0,2.57V22.89a2.56,2.56,0,0,0,3.85,2.22L21.45,15A2.57,2.57,0,0,0,21.45,10.51Z"/></g></svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="sub_title end" id="end_title_pro">
+					<span class="text"></span>
+				</div>
+			</div>
+
+			<div id="school_content">
+				<a id="school"></a>
+				<div class="sub_title start" id="sub_title_school">
+					<span class="text"></span>
+				</div>
+
+				<div class="project on_right" id="minecraft_clone">
+					<div class="video_div" onclick="window.open('https://www.youtube.com/watch?v=muUEtjMYQMY','mywindow');">
+						<div class="lds-ring"><div class="lds-ring-1"></div><div class="lds-ring-2"></div><div class="lds-ring-3"></div><div class="lds-ring-4"></div></div>
+						<video loop muted preload="none" class="html_video html_true_video">
+							<source src="./resources/videos/Minecraft_clone.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div class="text_box">
+						<svg class="project_title" preserveAspectRatio viewBox="0 0 400 21">
+							<text class="project_title_text" x="0" y="18">Minecraft clone<tspan y="17.4" class="project_date">&nbsp;(2021)</tspan></text>
+						</svg>
+
+						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
+							<text x="0" y="0">
+								<tspan x="0" dy="1.25em">This program uses the concept of the famous game</tspan>
+								<tspan x="0" dy="1.25em">Minecraft. It procedurally generates an infinite world,</tspan>
+								<tspan x="0" dy="1.25em">the player has an animated character and can break</tspan>
+								<tspan x="0" dy="1.25em">blocks, there are also different biomes and mobs. This</tspan>
+								<tspan x="0" dy="1.25em">program was made for my computer graphics course,</tspan>
+								<tspan x="0" dy="1.25em">I got 20/20 and won a prize for the best project...</tspan>
+							</text>
+						</svg>
+
+						<svg class="tag tag_1" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(31, 52, 240);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">C++</text>
+						</svg>
+
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(32, 210, 226);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">GLSL</text>
+						</svg>
+
+						<svg class="tag tag_3" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(137, 20, 204);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">OpenGL</text>
+						</svg>
+
+						<svg class="tag tag_4" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(28, 233, 28);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">SDL2</text>
+						</svg>
+
+						<svg class="tag tag_5" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(240, 121, 24);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">GLM</text>
+						</svg>
+
+						<div title="GitHub" class="link_button" onclick="window.open('https://github.com/angeluriot/Minecraft_clone','mywindow');">
+							<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+							<svg class="link_button_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.73 25.46"><defs></defs><g id="link_button_g"><path class="link_button_path" d="M21.45,10.51,3.85.35A2.57,2.57,0,0,0,0,2.57V22.89a2.56,2.56,0,0,0,3.85,2.22L21.45,15A2.57,2.57,0,0,0,21.45,10.51Z"/></g></svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="project on_left" id="obis_3D">
+					<div class="video_div">
+						<div class="lds-ring"><div class="lds-ring-1"></div><div class="lds-ring-2"></div><div class="lds-ring-3"></div><div class="lds-ring-4"></div></div>
+						<video loop muted preload="none" class="html_video html_true_video">
+							<source src="./resources/videos/Obis3D.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div class="text_box">
+						<svg class="project_title" preserveAspectRatio viewBox="0 0 400 21">
+							<text class="project_title_text" x="0" y="18">OBIS 3D<tspan y="17.4" class="project_date">&nbsp;(2021)</tspan></text>
+						</svg>
+
+						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
+							<text x="0" y="0">
+								<tspan x="0" dy="1.25em">An application showing data from the Ocean Biodiversity</tspan>
+								<tspan x="0" dy="1.25em">Information System (OBIS) on a 3D globe. The program</tspan>
+								<tspan x="0" dy="1.25em">can read a .json file or download the data from the</tspan>
+								<tspan x="0" dy="1.25em">Internet. You can choose the species, specify a date</tspan>
+								<tspan x="0" dy="1.25em">range and it can also show an animation of the evolution</tspan>
+								<tspan x="0" dy="1.25em">over time. I got 17/20 on this project...</tspan>
+							</text>
+						</svg>
+
+						<svg class="tag tag_1" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(241, 173, 15);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">Java</text>
+						</svg>
+
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(32, 164, 226);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">JavaFX</text>
+						</svg>
+
+						<div title="GitHub" class="link_button" onclick="window.open('https://github.com/angeluriot/OBIS_3D','mywindow');">
+							<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+							<svg class="link_button_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.73 25.46"><defs></defs><g id="link_button_g"><path class="link_button_path" d="M21.45,10.51,3.85.35A2.57,2.57,0,0,0,0,2.57V22.89a2.56,2.56,0,0,0,3.85,2.22L21.45,15A2.57,2.57,0,0,0,21.45,10.51Z"/></g></svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="project on_right" id="shell">
+					<div class="video_div">
+						<div class="lds-ring"><div class="lds-ring-1"></div><div class="lds-ring-2"></div><div class="lds-ring-3"></div><div class="lds-ring-4"></div></div>
+						<video loop muted preload="none" class="html_video html_true_video">
+							<source src="./resources/videos/Shell.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div class="text_box">
+						<svg class="project_title" preserveAspectRatio viewBox="0 0 400 21">
+							<text class="project_title_text" x="0" y="18">Shell<tspan y="17.4" class="project_date">&nbsp;(2021)</tspan></text>
+						</svg>
+
+						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
+							<text x="0" y="0">
+								<tspan x="0" dy="1.25em">This program is a simplified Shell running basic Unix</tspan>
+								<tspan x="0" dy="1.25em">commands. It can launch default Unix binaries or any</tspan>
+								<tspan x="0" dy="1.25em">other program. It can handle process input and output</tspan>
+								<tspan x="0" dy="1.25em">redirections, and pipes between multiple process. cd,</tspan>
+								<tspan x="0" dy="1.25em">cp and mkdir are builtins, and all process can be launch</tspan>
+								<tspan x="0" dy="1.25em">in the background. I got 19/20 on this project...</tspan>
+							</text>
+						</svg>
+
+						<svg class="tag tag_1" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(31, 52, 240);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">C++</text>
+						</svg>
+
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(137, 20, 204);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">WSL</text>
+						</svg>
+
+						<div title="GitHub" class="link_button" onclick="window.open('https://github.com/angeluriot/Shell','mywindow');">
+							<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+							<svg class="link_button_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.73 25.46"><defs></defs><g id="link_button_g"><path class="link_button_path" d="M21.45,10.51,3.85.35A2.57,2.57,0,0,0,0,2.57V22.89a2.56,2.56,0,0,0,3.85,2.22L21.45,15A2.57,2.57,0,0,0,21.45,10.51Z"/></g></svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="sub_title end" id="end_title_school">
+					<span class="text"></span>
+				</div>
+			</div>
+
+			<div id="personal_content">
+				<a id="personal"></a>
+				<div class="sub_title start" id="sub_title_personal">
+					<span class="text"></span>
+				</div>
+
+				<div class="project on_left" id="galaxy_simulation">
+					<div class="video_div">
+						<div class="lds-ring"><div class="lds-ring-1"></div><div class="lds-ring-2"></div><div class="lds-ring-3"></div><div class="lds-ring-4"></div></div>
+						<video loop muted preload="none" class="html_video html_true_video">
+							<source src="./resources/videos/Galaxy_simulation.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div class="text_box">
+						<svg class="project_title" preserveAspectRatio viewBox="0 0 400 21">
+							<text class="project_title_text" x="0" y="18">Galaxy simulation<tspan y="17.4" class="project_date">&nbsp;(2019)</tspan></text>
+						</svg>
+
+						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
+							<text x="0" y="0">
+								<tspan x="0" dy="1.25em">It is an n-body type simulation specifically designed to</tspan>
+								<tspan x="0" dy="1.25em">simulate galaxies. It can simulate several hundreds of</tspan>
+								<tspan x="0" dy="1.25em">thousands stars thanks to an optimization algorithm</tspan>
+								<tspan x="0" dy="1.25em">called the Barnes-Hut algorithm. You can change a lot</tspan>
+								<tspan x="0" dy="1.25em">of parameters like the speed of the stars, the shape of</tspan>
+								<tspan x="0" dy="1.25em">the galaxy, the precision of the calculation...</tspan>
+							</text>
+						</svg>
+
+						<svg class="tag tag_1" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(31, 52, 240);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">C++</text>
+						</svg>
+
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(28, 233, 28);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">SFML</text>
+						</svg>
+
+						<svg class="tag tag_3" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(215, 30, 221);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">Barnes-Hut</text>
+						</svg>
+
+						<div title="GitHub" class="link_button" onclick="window.open('https://github.com/angeluriot/Galaxy_simulation','mywindow');">
+							<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+							<svg class="link_button_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.73 25.46"><defs></defs><g id="link_button_g"><path class="link_button_path" d="M21.45,10.51,3.85.35A2.57,2.57,0,0,0,0,2.57V22.89a2.56,2.56,0,0,0,3.85,2.22L21.45,15A2.57,2.57,0,0,0,21.45,10.51Z"/></g></svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="project on_right" id="sandbox">
+					<div class="video_div">
+						<div class="lds-ring"><div class="lds-ring-1"></div><div class="lds-ring-2"></div><div class="lds-ring-3"></div><div class="lds-ring-4"></div></div>
+						<video loop muted preload="none" class="html_video html_true_video">
+							<source src="./resources/videos/Sandbox.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div class="text_box">
+						<svg class="project_title" preserveAspectRatio viewBox="0 0 400 21">
+							<text class="project_title_text" x="0" y="18">Sandbox<tspan y="17.4" class="project_date">&nbsp;(2020)</tspan></text>
+						</svg>
+
+						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
+							<text x="0" y="0">
+								<tspan x="0" dy="1.25em">This program is a sandbox 2D application simulating the</tspan>
+								<tspan x="0" dy="1.25em">interactions between a large number of materials. It</tspan>
+								<tspan x="0" dy="1.25em">uses a grid where each square represents an element of</tspan>
+								<tspan x="0" dy="1.25em">a material. There is wood, water, lava, ice, acid, and</tspan>
+								<tspan x="0" dy="1.25em">many other, wood burns, ice melts, water evaporates,</tspan>
+								<tspan x="0" dy="1.25em">salt dissolves, lava cools into stone...</tspan>
+							</text>
+						</svg>
+
+						<svg class="tag tag_1" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(31, 52, 240);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">C++</text>
+						</svg>
+
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(28, 233, 28);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">SFML</text>
+						</svg>
+
+						<div title="GitHub" class="link_button" onclick="window.open('https://github.com/angeluriot/Sandbox','mywindow');">
+							<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+							<svg class="link_button_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.73 25.46"><defs></defs><g id="link_button_g"><path class="link_button_path" d="M21.45,10.51,3.85.35A2.57,2.57,0,0,0,0,2.57V22.89a2.56,2.56,0,0,0,3.85,2.22L21.45,15A2.57,2.57,0,0,0,21.45,10.51Z"/></g></svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="project on_left" id="flappy_bird_ai">
+					<div class="video_div">
+						<div class="lds-ring"><div class="lds-ring-1"></div><div class="lds-ring-2"></div><div class="lds-ring-3"></div><div class="lds-ring-4"></div></div>
+						<video loop muted preload="none" class="html_video html_true_video">
+							<source src="./resources/videos/Flappy_bird_AI.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div class="text_box">
+						<svg class="project_title" preserveAspectRatio viewBox="0 0 400 21">
+							<text class="project_title_text" x="0" y="18">Flappy bird AI<tspan y="17.4" class="project_date">&nbsp;(2020)</tspan></text>
+						</svg>
+
+						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
+							<text x="0" y="0">
+								<tspan x="0" dy="1.25em">This program is a neural network using an evolutionary</tspan>
+								<tspan x="0" dy="1.25em">algorithm to learn how to play the famous game Flappy</tspan>
+								<tspan x="0" dy="1.25em">bird. The inputs are the distance and the height of the</tspan>
+								<tspan x="0" dy="1.25em">pipes and the speed of the bird, the output is to jump</tspan>
+								<tspan x="0" dy="1.25em">or not. After about ten generations, several hundred</tspan>
+								<tspan x="0" dy="1.25em">birds manage to pass the pipes...</tspan>
+							</text>
+						</svg>
+
+						<svg class="tag tag_1" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(31, 52, 240);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">C++</text>
+						</svg>
+
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(28, 233, 28);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">SFML</text>
+						</svg>
+
+						<svg class="tag tag_3" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(15, 196, 241);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">Neural network</text>
+						</svg>
+
+						<div title="GitHub" class="link_button" onclick="window.open('https://github.com/angeluriot/Flappy_bird_AI','mywindow');">
+							<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+							<svg class="link_button_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.73 25.46"><defs></defs><g id="link_button_g"><path class="link_button_path" d="M21.45,10.51,3.85.35A2.57,2.57,0,0,0,0,2.57V22.89a2.56,2.56,0,0,0,3.85,2.22L21.45,15A2.57,2.57,0,0,0,21.45,10.51Z"/></g></svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="project on_right" id="fractals_generator_2d">
+					<div class="video_div">
+						<div class="lds-ring"><div class="lds-ring-1"></div><div class="lds-ring-2"></div><div class="lds-ring-3"></div><div class="lds-ring-4"></div></div>
+						<video loop muted preload="none" class="html_video html_true_video">
+							<source src="./resources/videos/Fractals_generator_2d.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div class="text_box">
+						<svg class="project_title" preserveAspectRatio viewBox="0 0 400 21">
+							<text class="project_title_text" x="0" y="18">2D fractals generator<tspan y="17.4" class="project_date">&nbsp;(2019)</tspan></text>
+						</svg>
+
+						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
+							<text x="0" y="0">
+								<tspan x="0" dy="1.25em">This program can generate images of fractals like the</tspan>
+								<tspan x="0" dy="1.25em">Mandelbrot or the Julia set. Fractals are shapes with</tspan>
+								<tspan x="0" dy="1.25em">details (often self-similar) whatever the scale we look.</tspan>
+								<tspan x="0" dy="1.25em">The program allow us to zoom and navigate in several</tspan>
+								<tspan x="0" dy="1.25em">of these very interesting mathematical structures</tspan>
+								<tspan x="0" dy="1.25em">generated from such simple equations...</tspan>
+							</text>
+						</svg>
+
+						<svg class="tag tag_1" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(31, 52, 240);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">C++</text>
+						</svg>
+
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(28, 233, 28);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">SFML</text>
+						</svg>
+
+						<svg class="tag tag_3" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(241, 173, 15);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">Fractals</text>
+						</svg>
+
+						<div title="GitHub" class="link_button" onclick="window.open('https://github.com/angeluriot/2D_fractals_generator','mywindow');">
+							<svg class="circle" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg>
+							<svg class="link_button_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.73 25.46"><defs></defs><g id="link_button_g"><path class="link_button_path" d="M21.45,10.51,3.85.35A2.57,2.57,0,0,0,0,2.57V22.89a2.56,2.56,0,0,0,3.85,2.22L21.45,15A2.57,2.57,0,0,0,21.45,10.51Z"/></g></svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="sub_title end" id="end_title_personal">
+					<span class="text"></span>
+				</div>
+			</div>
+
+			<div id="about_content">
+				<a id="about"></a>
+				<div class="sub_title start" id="sub_title_about">
+					<span class="text"></span>
+				</div>
+
+				<div id="about_diagram">
+					<p id="biography">
+						Hi! I'm a 21 years old french student in the engineering school
+						<em onclick="window.open('https://www.polytech.universite-paris-saclay.fr','mywindow');">Polytech Paris-Saclay</em>,
+						I'm in my second year of the engineering cycle majoring in computer science after the two years of integrated preparation.
+						I'm looking for a 3 month internship in a foreign country for the summer 2022. Are you interested? Contact me!
+					</p>
+
+					<span class="about_category languages">Languages</span>
+					<span class="about_category libraries">Libraries</span>
+					<span class="about_category softwares">Softwares</span>
+					<span class="about_category contact">Contact</span>
+
+					<div class="logo_board languages">
+						<div title="C++" onclick="window.open('https://en.wikipedia.org/wiki/C%2B%2B','mywindow');" class="circle top_1 left_1"><img class="hexagon" src="resources/shapes/Cpp.svg"></div>
+						<div title="C" onclick="window.open('https://en.wikipedia.org/wiki/C_(programming_language)','mywindow');" class="circle top_1 left_2"><img class="hexagon" src="resources/shapes/C.svg"></div>
+						<div title="Java" onclick="window.open('https://en.wikipedia.org/wiki/Java_(programming_language)','mywindow');" class="circle top_1 left_3"><img class="round" src="resources/shapes/Java.svg"></div>
+						<div title="HTML" onclick="window.open('https://en.wikipedia.org/wiki/HTML','mywindow');" class="circle top_1 left_4"><img class="web" src="resources/shapes/Html.svg"></div>
+						<div title="CSS" onclick="window.open('https://en.wikipedia.org/wiki/CSS','mywindow');" class="circle top_1 left_5"><img class="web" src="resources/shapes/Css.svg"></div>
+						<div title="JavaScript" onclick="window.open('https://en.wikipedia.org/wiki/JavaScript','mywindow');" class="circle top_1 left_6"><img class="web" src="resources/shapes/Javascript.svg"></div>
+						<div title="C#" onclick="window.open('https://en.wikipedia.org/wiki/C_Sharp_(programming_language)','mywindow');" class="circle top_2 left_1"><img class="hexagon" src="resources/shapes/C_sharp.svg"></div>
+						<div title="GLSL" onclick="window.open('https://fr.wikipedia.org/wiki/OpenGL_Shading_Language','mywindow');" class="circle top_2 left_2"><img class="square" src="resources/images/Glsl.png"></div>
+						<div title="Python" onclick="window.open('https://en.wikipedia.org/wiki/Python_(programming_language)','mywindow');" class="circle top_2 left_3"><img class="snake" src="resources/shapes/Python.svg"></div>
+						<div title="SQL" onclick="window.open('https://en.wikipedia.org/wiki/SQL','mywindow');" class="circle top_2 left_4"><img class="sql" src="resources/shapes/Sql.svg"></div>
+						<div title="CMake" onclick="window.open('https://en.wikipedia.org/wiki/CMake','mywindow');" class="circle top_2 left_5"><img class="triangle" src="resources/shapes/Cmake.svg"></div>
+						<div title="Git" onclick="window.open('https://en.wikipedia.org/wiki/Git','mywindow');" class="circle top_2 left_6"><img class="square" src="resources/shapes/Git.svg"></div>
+					</div>
+
+					<div class="logo_board libraries">
+						<div title="SFML" onclick="window.open('https://www.sfml-dev.org/index.php','mywindow');" class="circle top_1 left_1"><img class="pentagon" src="resources/shapes/Sfml.svg"></div>
+						<div title="OpenGL" onclick="window.open('https://www.opengl.org//','mywindow');" class="circle top_1 left_2"><img class="ellipse" src="resources/shapes/OpenGL.svg"></div>
+						<div title="GLM" onclick="window.open('http://glm.g-truc.net/0.9.6/api/index.html','mywindow');" class="circle top_1 left_3"><img class="ellipse" src="resources/shapes/Glm.svg"></div>
+						<div title="ImGui" onclick="window.open('https://github.com/ocornut/imgui','mywindow');" class="circle top_1 left_4"><img class="round" src="resources/shapes/ImGui.svg"></div>
+						<div title="GreenSock" onclick="window.open('https://greensock.com/','mywindow');" class="circle top_1 left_6"><img class="hero" src="resources/images/GreenSock.png"></div>
+						<div title="JavaFX" onclick="window.open('https://openjfx.io/','mywindow');" class="circle top_1 left_5"><img class="round" src="resources/shapes/JavaFX.svg"></div>
+						<div title="AnimeJS" onclick="window.open('https://animejs.com/','mywindow');" class="circle top_2 left_1"><img class="round" src="resources/images/AnimeJS.png"></div>
+						<div title="ThreeJS" onclick="window.open('https://threejs.org/','mywindow');" class="circle top_2 left_2"><img class="triangle" src="resources/shapes/ThreeJS.svg"></div>
+						<div title="Keras" onclick="window.open('https://keras.io/','mywindow');" class="circle top_2 left_3"><img class="round" src="resources/shapes/Keras.svg"></div>
+						<div class="circle top_2 left_4"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_5"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_6"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+					</div>
+
+					<div class="logo_board softwares">
+						<div title="Visual Studio Code" onclick="window.open('https://code.visualstudio.com/','mywindow');" class="circle top_1 left_1"><img class="vs" src="resources/shapes/Vs_code.svg"></div>
+						<div title="Visual Studio" onclick="window.open('https://visualstudio.microsoft.com/','mywindow');" class="circle top_1 left_2"><img class="vs" src="resources/shapes/Visual_studio.svg"></div>
+						<div title="IntelliJ" onclick="window.open('https://www.jetbrains.com/idea/','mywindow');" class="circle top_1 left_3"><img class="round" src="resources/shapes/IntelliJ.svg"></div>
+						<div title="Unity" onclick="window.open('https://unity.com/','mywindow');" class="circle top_1 left_4"><img class="cube" src="resources/shapes/Unity.svg"></div>
+						<div title="Solidworks" onclick="window.open('https://www.solidworks.com/','mywindow');" class="circle top_1 left_5"><img class="sw" src="resources/images/Solidworks.png"><span id="sw_star">*</span></div>
+						<div title="Excel" onclick="window.open('https://www.microsoft.com/en-us/microsoft-365/excel','mywindow');" class="circle top_1 left_6"><img class="round" src="resources/shapes/Excel.svg"></div>
+						<div title="After Effects" onclick="window.open('https://www.adobe.com/products/aftereffects.html','mywindow');" class="circle top_2 left_1"><img class="round" src="resources/shapes/After_effects.svg"></div>
+						<div title="Illustrator" onclick="window.open('https://www.adobe.com/products/illustrator.html','mywindow');" class="circle top_2 left_2"><img class="round" src="resources/shapes/Illustrator.svg"></div>
+						<div title="Photoshop" onclick="window.open('https://www.adobe.com/products/photoshop.html','mywindow');" class="circle top_2 left_3"><img class="round" src="resources/shapes/Photoshop.svg"></div>
+						<div title="Audacity" onclick="window.open('https://www.audacityteam.org/','mywindow');" class="circle top_2 left_4"><img class="helmet" src="resources/shapes/Audacity.svg"></div>
+						<div class="circle top_2 left_5"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_6"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+					</div>
+
+					<div class="logo_board contact">
+						<div title="Linkedin" onclick="window.open('https://www.linkedin.com/in/angel-uriot/','mywindow');" class="circle top_1 left_1"><img class="round" src="resources/shapes/Linkedin.svg"></div>
+						<a href="mailto: angel.uriot@gmail.com"><div title="angel.uriot@gmail.com" class="circle top_1 left_2"><img class="sw" src="resources/shapes/Mail.svg"></div></a>
+						<div title="Twitter" onclick="window.open('https://twitter.com/DIMENSION_YT','mywindow');" class="circle top_1 left_3"><img class="round" src="resources/shapes/Twitter.svg"></div>
+						<div class="circle top_1 left_4"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_1 left_5"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_1 left_6"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_1"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_2"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_3"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_4"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_5"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div class="circle top_2 left_6"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+					</div>
+
+					<img src="resources/shapes/Head_logo.svg" id="head_logo" onclick="document.location='#home';">
+					<svg id="about_svg_background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860.84 302.55"><g><path d="M534.46,84.06,445.3,173.23l89.16,89.16a45,45,0,0,0,32,13.27H716.75a20.88,20.88,0,0,1,20-14.88H833a20.89,20.89,0,0,1,0,41.77H736.75a20.9,20.9,0,0,1-20-14.89H566.51A56.94,56.94,0,0,1,526,270.87l-89.16-89.16-89.17,89.16a56.94,56.94,0,0,1-40.53,16.79H170.86a20.87,20.87,0,0,1-20,14.89H26.65a20.89,20.89,0,0,1,0-41.77H150.86a20.91,20.91,0,0,1,20,14.88H307.12a45,45,0,0,0,32-13.27l89.17-89.16L339.16,84.06a45,45,0,0,0-32-13.28H176.63a20.88,20.88,0,0,1-20,14.89H20.88a20.89,20.89,0,0,1,0-41.77H156.62a20.91,20.91,0,0,1,20,14.88H307.12a57,57,0,0,1,40.53,16.79l83.16,83.16V12H256a6,6,0,0,1,0-12H617.66a6,6,0,0,1,0,12H442.81V158.74L526,75.57a57,57,0,0,1,40.53-16.79H709.79a20.88,20.88,0,0,1,20-14.88H840a20.89,20.89,0,0,1,0,41.77H729.79a20.9,20.9,0,0,1-20-14.89H566.51A45,45,0,0,0,534.46,84.06Z"/></g></svg>
+					<span id="footer">(*) Official certification: <em onclick="window.open('https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-EVLJUA8G7D','mywindow');">link here</em></span>
+				</div>
+
+				<div class="sub_title end" id="end_title_about">
+					<span class="text"></span>
+				</div>
+			</div>
+
+			<div id="scroll_div"></div>
+		</div>
+	</body>
+</html>

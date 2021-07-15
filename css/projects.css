@@ -1,0 +1,258 @@
+@font-face
+{
+	font-family: inter_regular;
+	src: url("../resources/fonts/inter/Inter-Regular.woff2");
+}
+
+@font-face
+{
+	font-family: inter_bold;
+	src: url("../resources/fonts/inter/Inter-Bold.woff2");
+}
+
+.project
+{
+	position: absolute;
+	width: 1700px;
+	height: 544px;
+}
+
+.project.on_left
+{
+	left: 0%;
+	transform: translate(0%, -50%);
+}
+
+.project.on_right
+{
+	left: 100%;
+	transform: translate(-100%, -50%);
+}
+
+.video_div
+{
+	position: absolute;
+	z-index: 11;
+	width: 32%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 54.4px;
+	background-color: black;
+}
+
+.on_left .video_div
+{
+	left: 0%;
+}
+
+.on_right .video_div
+{
+	transform: translate(-100%, 0%);
+	left: 100%;
+}
+
+.html_video
+{
+	position: absolute;
+	z-index: 11;
+	left: 50%;
+	top: 50%;
+	height: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.lds-ring
+{
+	z-index: 9;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.lds-ring div
+{
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1.2vw solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1)
+{
+	animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2)
+{
+	animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3)
+{
+	animation-delay: -0.15s;
+}
+
+@keyframes lds-ring
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+.project_title
+{
+	position: absolute;
+	z-index: 5;
+	top: -10%;
+	height: 20%;
+	font-family: inter_extra_bold;
+	font-size: 15px;
+	fill: white;
+	display: block;
+	pointer-events: none;
+}
+
+.on_left .project_title
+{
+	left: 21.5%;
+	transform: translate(0%, -60%);
+}
+
+.on_right .project_title
+{
+	left: 78.7%;
+	transform: translate(-100%, -60%);
+}
+
+.project_date
+{
+	fill: rgb(100, 100, 100);
+	font-family: inter_regular;
+	font-size: 12px;
+	font-style: italic;
+	white-space: nowrap;
+}
+
+.text_box
+{
+	position: absolute;
+	z-index: 5;
+	top: 15%;
+	width: 85%;
+	height: 84.75%;
+	border-radius: 54.4px;
+	background-color: white;
+}
+
+.on_left .text_box
+{
+	left: 15%;
+	transform: translate(0%, 0%);
+}
+
+.on_right .text_box
+{
+	left: 85%;
+	transform: translate(-100%, 0%);
+}
+
+.text_box .text
+{
+	position: absolute;
+	z-index: 6;
+	top: 3%;
+	width: 75%;
+	fill: rgb(100, 100, 100);
+	font-family: inter_regular;
+	font-size: 15px;
+	white-space: normal;
+}
+
+.on_left .text_box .text
+{
+	left: 22%;
+	text-anchor: start;
+}
+
+.on_right .text_box .text
+{
+	left: 3.2%;
+	text-anchor: end;
+}
+
+.text_box .tag
+{
+	position: absolute;
+	z-index: 6;
+	top: 78%;
+	height: 13%;
+	fill: white;
+	font-family: inter_bold;
+	font-size: 15px;
+	border-radius: 10000px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.on_left .text_box .tag
+{
+	transform: translate(0%, 0%);
+}
+
+.on_right .text_box .tag
+{
+	transform: translate(-100%, 0%);
+}
+
+.text_box .link_button
+{
+	position: absolute;
+	z-index: 6;
+	width: 9%;
+	transform: translate(-50%, -50%);
+}
+
+.on_left .text_box .link_button
+{
+	top: calc(100% - 100% * 0.18);
+	left: calc(100% - 32% * 0.18);
+}
+
+.on_right .text_box .link_button
+{
+	top: calc(100% - 100% * 0.18);
+	left: calc(32% * 0.18);
+}
+
+.text_box .link_button .circle
+{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	fill: rgb(26, 202, 79);
+}
+
+.text_box .link_button .link_button_svg
+{
+	position: absolute;
+	width: 35%;
+	top: 50%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+	fill: white;
+}

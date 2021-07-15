@@ -1,0 +1,102 @@
+@font-face
+{
+	font-family: inter_extra_bold;
+	src: url("../resources/fonts/inter/Inter-ExtraBold.woff2");
+}
+
+#menu
+{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	background-color: black;
+	z-index: 9;
+	font-size: 2vw;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.menu_div
+{
+	position: absolute;
+	z-index: 10;
+	width: 15%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: all;
+}
+
+#menu .circle
+{
+	position: absolute;
+	fill: white;
+	width: 0%;
+	mix-blend-mode: difference;
+	z-index: 11;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+#menu .element
+{
+	position: absolute;
+	top: 48%;
+	z-index: 12;
+	transform: translate(0%, -50%);
+	font-family: inter_extra_bold;
+	color: white;
+	white-space: nowrap;
+	mix-blend-mode: difference;
+	pointer-events: none;
+}
+
+#menu .text
+{
+	text-align: left;
+	pointer-events: none;
+}
+
+#menu #menu_pro
+{
+	left: 45.01%;
+	width: 8.5%;
+}
+
+#menu #menu_school
+{
+	left: 53.5%;
+	width: 12%;
+}
+
+#menu #menu_personal
+{
+	left: 65.5%;
+	width: 14%;
+}
+
+#menu #menu_about
+{
+	left: 79.5%;
+	width: 15%;
+}
+
+#menu #menu_pro .element
+{
+	left: 30%;
+}
+
+#menu #menu_school .element
+{
+	left: 21.5%;
+}
+
+#menu #menu_personal .element
+{
+	left: 18.5%;
+}
+
+#menu #menu_about .element
+{
+	left: 18%;
+}
