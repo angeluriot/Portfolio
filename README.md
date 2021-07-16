@@ -1,30 +1,28 @@
 # Portfolio
 
-![Release](https://img.shields.io/badge/Release-alpha-blueviolet)
+![Release](https://img.shields.io/badge/Release-1.0-blueviolet)
 ![Language](https://img.shields.io/badge/Language-JavaScript-ffcc14)
-![size](https://img.shields.io/badge/Size-1Mo-f12222)
+![Size](https://img.shields.io/badge/Size-1Mo-f12222)
 ![Open Source](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)
 
 <br/>
 
-Ce dépôt contient le code source d'un site internet présentant mes projets.
+A website presenting my projects.
 
 <br/>
 
 <p align="center">
-	<img src="https://i.imgur.com/hLTdpWA.png" width="100%">
+	<img src="https://i.imgur.com/hLTdpWA.png" width="700">
 </p>
 
 <br/>
 
-# Utilisation
+# Access
 
-* Le site est en ligne à l'adresse : **[angeluriot.com](https://www.angeluriot.com/)**.
-
-* Téléchargez ce dépôt et ouvrez le fichier **index.html** avec votre navigateur.
+* The website is online at the address : **[angeluriot.com](https://www.angeluriot.com/)**.
 
 <br/>
 
-# Crédits
+# Credits
 
-* [**Angel Uriot**](https://github.com/angeluriot) : Créateur du projet.
+* [**Angel Uriot**](https://github.com/angeluriot) : Creator of the project.
