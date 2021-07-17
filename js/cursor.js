@@ -52,11 +52,8 @@ function init_cursor()
 			on_border = false;
 		}
 
-		TweenMax.to(document.querySelector("#mouse_follower #small"), 0.01,
-		{
-			left: e.clientX,
-			top: e.clientY
-		});
+		document.querySelector("#mouse_follower #small").style.left = e.clientX;
+		document.querySelector("#mouse_follower #small").style.top = e.clientY;
 
 		TweenMax.to(document.querySelector("#mouse_follower #big"), 0.4,
 		{

@@ -381,6 +381,9 @@ function init_project()
 		else if (projects[i].id == "shell")
 			videos_left.push(85);
 
+		else if (projects[i].id == "cars_ai")
+			videos_left.push(88);
+
 		else
 			videos_left.push(50);
 
