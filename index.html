@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta property=“og:image” content=“https://i.imgur.com/cl6kyu0.png” />
-		<meta property=”og:image:width” content=”1200″ />
-		<meta property=”og:image:height” content=”627″ />
+		<meta property="og:image" content="https://i.imgur.com/cl6kyu0.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="627" />
 
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 		<title>Angel Uriot projects</title>
+		<link rel="shortcut icon" type="image/png" href="resources/images/Favicon.png"/>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
@@ -309,12 +310,12 @@
 
 						<svg class="text" preserveAspectRatio viewBox="0 0 405 120">
 							<text x="0" y="0">
-								<tspan x="0" dy="1.25em">It is an n-body type simulation specifically designed to</tspan>
-								<tspan x="0" dy="1.25em">simulate galaxies. It can simulate several hundreds of</tspan>
-								<tspan x="0" dy="1.25em">thousands stars thanks to an optimization algorithm</tspan>
-								<tspan x="0" dy="1.25em">called the Barnes-Hut algorithm. You can change a lot</tspan>
-								<tspan x="0" dy="1.25em">of parameters like the speed of the stars, the shape of</tspan>
-								<tspan x="0" dy="1.25em">the galaxy, the precision of the calculation...</tspan>
+								<tspan x="0" dy="1.25em">This program is an n-body type simulation using GPU</tspan>
+								<tspan x="0" dy="1.25em">acceleration. It is able to simulate galaxies, galaxy</tspan>
+								<tspan x="0" dy="1.25em">collisions and universes. It has a menu to change the</tspan>
+								<tspan x="0" dy="1.25em">settings and an interactive 3D camera. You can choose</tspan>
+								<tspan x="0" dy="1.25em">a lot of parameters like the speed of the stars, the shape</tspan>
+								<tspan x="0" dy="1.25em">of the galaxy, the precision of the calculation...</tspan>
 							</text>
 						</svg>
 
@@ -322,12 +323,20 @@
 							<text class="tag_text" x="50%" y="17" text-anchor="middle">C++</text>
 						</svg>
 
-						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(28, 233, 28);">
-							<text class="tag_text" x="50%" y="17" text-anchor="middle">SFML</text>
+						<svg class="tag tag_2" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(28, 124, 233);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">OpenGL</text>
 						</svg>
 
-						<svg class="tag tag_3" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(215, 30, 221);">
-							<text class="tag_text" x="50%" y="17" text-anchor="middle">Barnes-Hut</text>
+						<svg class="tag tag_3" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(30, 221, 132);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">OpenCL</text>
+						</svg>
+
+						<svg class="tag tag_3" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(41, 70, 168);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">ImGui</text>
+						</svg>
+
+						<svg class="tag tag_3" preserveAspectRatio viewBox="0 0 80 23" style="background-color: rgb(240, 121, 24);">
+							<text class="tag_text" x="50%" y="17" text-anchor="middle">GLM</text>
 						</svg>
 
 						<div title="GitHub" class="link_button" onclick="window.open('https://github.com/angeluriot/Galaxy_simulation','mywindow');">
@@ -705,7 +714,7 @@
 						<div title="CSS" onclick="window.open('https://en.wikipedia.org/wiki/CSS','mywindow');" class="circle top_1 left_5"><img class="web" src="resources/shapes/Css.svg"></div>
 						<div title="JavaScript" onclick="window.open('https://en.wikipedia.org/wiki/JavaScript','mywindow');" class="circle top_1 left_6"><img class="web" src="resources/shapes/Javascript.svg"></div>
 						<div title="C#" onclick="window.open('https://en.wikipedia.org/wiki/C_Sharp_(programming_language)','mywindow');" class="circle top_2 left_1"><img class="hexagon" src="resources/shapes/C_sharp.svg"></div>
-						<div title="GLSL" onclick="window.open('https://en.wikipedia.org/wiki/OpenGL_Shading_Language','mywindow');" class="circle top_2 left_2"><img class="square" src="resources/images/Glsl.png"></div>
+						<div title="OCaml" onclick="window.open('https://en.wikipedia.org/wiki/OCaml','mywindow');" class="circle top_2 left_2"><img class="hexagon" src="resources/shapes/OCaml.svg"></div>
 						<div title="Python" onclick="window.open('https://en.wikipedia.org/wiki/Python_(programming_language)','mywindow');" class="circle top_2 left_3"><img class="snake" src="resources/shapes/Python.svg"></div>
 						<div title="SQL" onclick="window.open('https://en.wikipedia.org/wiki/SQL','mywindow');" class="circle top_2 left_4"><img class="sql" src="resources/shapes/Sql.svg"></div>
 						<div title="CMake" onclick="window.open('https://en.wikipedia.org/wiki/CMake','mywindow');" class="circle top_2 left_5"><img class="triangle" src="resources/shapes/Cmake.svg"></div>
@@ -715,14 +724,14 @@
 					<div class="logo_board libraries">
 						<div title="SFML" onclick="window.open('https://www.sfml-dev.org/index.php','mywindow');" class="circle top_1 left_1"><img class="pentagon" src="resources/shapes/Sfml.svg"></div>
 						<div title="OpenGL" onclick="window.open('https://www.opengl.org//','mywindow');" class="circle top_1 left_2"><img class="ellipse" src="resources/shapes/OpenGL.svg"></div>
-						<div title="GLM" onclick="window.open('http://glm.g-truc.net/0.9.6/api/index.html','mywindow');" class="circle top_1 left_3"><img class="ellipse" src="resources/shapes/Glm.svg"></div>
-						<div title="ImGui" onclick="window.open('https://github.com/ocornut/imgui','mywindow');" class="circle top_1 left_4"><img class="round" src="resources/shapes/ImGui.svg"></div>
-						<div title="GreenSock" onclick="window.open('https://greensock.com/','mywindow');" class="circle top_1 left_6"><img class="hero" src="resources/images/GreenSock.png"></div>
-						<div title="JavaFX" onclick="window.open('https://openjfx.io/','mywindow');" class="circle top_1 left_5"><img class="round" src="resources/shapes/JavaFX.svg"></div>
-						<div title="AnimeJS" onclick="window.open('https://animejs.com/','mywindow');" class="circle top_2 left_1"><img class="round" src="resources/images/AnimeJS.png"></div>
-						<div title="ThreeJS" onclick="window.open('https://threejs.org/','mywindow');" class="circle top_2 left_2"><img class="triangle" src="resources/shapes/ThreeJS.svg"></div>
-						<div title="Keras" onclick="window.open('https://keras.io/','mywindow');" class="circle top_2 left_3"><img class="round" src="resources/shapes/Keras.svg"></div>
-						<div class="circle top_2 left_4"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
+						<div title="OpenCL" onclick="window.open('https://www.khronos.org/opencl/','mywindow');" class="circle top_1 left_3"><img class="ellipse" src="resources/shapes/OpenCL.svg"></div>
+						<div title="GLM" onclick="window.open('http://glm.g-truc.net/0.9.6/api/index.html','mywindow');" class="circle top_1 left_4"><img class="ellipse" src="resources/shapes/Glm.svg"></div>
+						<div title="ImGui" onclick="window.open('https://github.com/ocornut/imgui','mywindow');" class="circle top_1 left_5"><img class="round" src="resources/shapes/ImGui.svg"></div>
+						<div title="JavaFX" onclick="window.open('https://openjfx.io/','mywindow');" class="circle top_1 left_6"><img class="round" src="resources/shapes/JavaFX.svg"></div>
+						<div title="GreenSock" onclick="window.open('https://greensock.com/','mywindow');" class="circle top_2 left_1"><img class="hero" src="resources/images/GreenSock.png"></div>
+						<div title="AnimeJS" onclick="window.open('https://animejs.com/','mywindow');" class="circle top_2 left_2"><img class="round" src="resources/images/AnimeJS.png"></div>
+						<div title="ThreeJS" onclick="window.open('https://threejs.org/','mywindow');" class="circle top_2 left_3"><img class="triangle" src="resources/shapes/ThreeJS.svg"></div>
+						<div title="Keras" onclick="window.open('https://keras.io/','mywindow');" class="circle top_2 left_4"><img class="round" src="resources/shapes/Keras.svg"></div>
 						<div class="circle top_2 left_5"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
 						<div class="circle top_2 left_6"><svg class="nothing" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="55" r="50"/></svg></div>
 					</div>

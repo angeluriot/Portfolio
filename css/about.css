@@ -41,7 +41,7 @@
 .about_category
 {
 	position: absolute;
-	z-index: 15;
+	z-index: 4;
 	transform: translate(-50%, -50%);
 	font-family: inter_extra_bold;
 	font-size: 1.94vw;
@@ -77,7 +77,7 @@
 .logo_board
 {
 	position: absolute;
-	z-index: 10;
+	z-index: 3;
 	transform: translate(-50%, -50%);
 	width: 32.25%;
 	height: 19.95%;
@@ -111,7 +111,7 @@
 .logo_board .circle
 {
 	position: absolute;
-	z-index: 15;
+	z-index: 4;
 	width: 15.2%;
 	height: 50%;
 	transform: translate(-50%, -50%);
@@ -302,7 +302,7 @@
 	transform: translate(-50%, -50%);
 	top: 17%;
 	left: 95%;
-	z-index: 30;
+	z-index: 5;
 	color: white;
 	font-size: 2.2vw;
 	font-family: inter_semi_bold;
@@ -312,7 +312,7 @@
 #head_logo
 {
 	position: absolute;
-	z-index: 15;
+	z-index: 4;
 	top: 54.61%;
 	left: 50%;
 	width: 13.7%;
@@ -323,7 +323,7 @@
 #about_svg_background
 {
 	position: absolute;
-	z-index: 10;
+	z-index: 3;
 	top: 26%;
 	left: 49.48%;
 	width: 71.5%;
@@ -341,7 +341,7 @@
 	font-family: inter_semi_bold;
 	font-size: 1vw;
 	color: white;
-	z-index: 50;
+	z-index: 6;
 	pointer-events: all;
 }
 
