@@ -23,5 +23,5 @@ window.onload = function()
 	init_about();
 
 	document.getElementById("loading_screen").style.opacity = '0';
-	document.querySelector(".project .html_true_video").forEach(element => { element.load(); });
+	document.querySelectorAll(".project .html_true_video").forEach(element => { element.load(); });
 }
