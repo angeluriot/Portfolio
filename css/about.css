@@ -38,42 +38,6 @@
 	text-decoration: underline;
 }
 
-.about_category
-{
-	position: absolute;
-	z-index: 4;
-	transform: translate(-50%, -50%);
-	font-family: inter_extra_bold;
-	font-size: 1.94vw;
-	color: black;
-	white-space: nowrap;
-	pointer-events: none;
-}
-
-.about_category.languages
-{
-	left: 21.12%;
-	top: 36.5%;
-}
-
-.about_category.libraries
-{
-	left: 78.88%;
-	top: 36.7%;
-}
-
-.about_category.softwares
-{
-	left: 21.12%;
-	top: 72.5%;
-}
-
-.about_category.contact
-{
-	left: 78.88%;
-	top: 72.5%;
-}
-
 .logo_board
 {
 	position: absolute;
@@ -84,19 +48,19 @@
 	pointer-events: none;
 }
 
-.logo_board.languages
+.logo_board.software_development
 {
 	top: 53.1%;
 	left: 21.1%;
 }
 
-.logo_board.libraries
+.logo_board.web_development
 {
 	top: 53.1%;
 	left: 78.87%;
 }
 
-.logo_board.softwares
+.logo_board.computer_graphics
 {
 	top: 88.9%;
 	left: 21.1%;
@@ -325,8 +289,8 @@
 	position: absolute;
 	z-index: 3;
 	top: 26%;
-	left: 49.48%;
-	width: 71.5%;
+	left: 48.85%;
+	width: 82.4%;
 	transform: translate(-50%, 0%);
 	fill: white;
 	pointer-events: none;
