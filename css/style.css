@@ -1,46 +1,167 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
 html
 {
 	scroll-behavior: smooth;
-	cursor: none;
+	overflow-x: hidden;
 }
 
 body
 {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	background: black;
+	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
-	cursor: none;
-}
-
-#loading_screen
-{
-	position: fixed;
-	top: 0%;
-	left: 0%;
+	position: relative;
 	width: 100%;
-	height: 100%;
-	z-index: 10000;
-	background-color: black;
-	pointer-events: none;
-	cursor: none;
 }
 
-#content
+ol
 {
-	overflow-anchor: none;
-	position: absolute;
-	left: 5%;
-	right: 5%;
-	cursor: none;
+	list-style: none;
 }
 
-#scroll_div
+#main
 {
-	position: absolute;
-	z-index: 1;
-	left: 0%;
+	display: flex;
+	flex-direction: column;
+}
+
+.section
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
-	cursor: none;
+	z-index: 10;
+	flex-direction: column;
+	padding: 0px 200px;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.content.leaning
+{
+	margin-top: calc(clamp(100px, 7vw, 140px) + 3.3vw);
+	margin-bottom: calc(clamp(100px, 7vw, 140px) - 3.3vw);
+}
+
+@media screen and (max-width: 1400px) { .content { padding: 0px 150px; } }
+@media screen and (max-width: 1150px) { .content { padding: 0px 100px; } }
+@media screen and (max-width: 1020px) { .content { padding: 0px 50px; } }
+@media screen and (max-width: 500px) { .content { padding: 0px 25px; } }
+
+.section_end
+{
+	height: 8vw;
+	width: 100%;
+	margin: -4vw 0px -4vw 0px;
+	transform: rotate(-4deg) scale(1.2, 1);
+}
+
+.link
+{
+	display: inline-block;
+	position: relative;
+	color: var(--light_blue);
+	text-decoration: none;
+}
+
+.link:hover
+{
+	color: var(--light_blue);
+}
+
+.link::before
+{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	top: 75%;
+	left: 0;
+	background-color: var(--light_blue);
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.link:hover::before
+{
+	transform: scaleX(0.999);
+}
+
+.button
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: all;
+	border: 2px solid var(--light_blue);
+	padding: 15px 35px 15px 40px;
+	border-radius: 40px;
+	font-family: raleway_semi_bold;
+	font-size: 16px;
+	color: var(--light_blue);
+	text-decoration: none;
+	background-color: none;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover
+{
+	background-color: var(--fade_light_blue);
+}
+
+.button .button_arrow
+{
+	height: 13px;
+	margin-left: 15px;
+	fill: none;
+	stroke: var(--light_blue);
+	stroke-width: 3px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.button .button_arrow .path_1, .button .button_arrow .path_2
+{
+	transition: all 0.3s ease;
+}
+
+.button:hover .button_arrow .path_1
+{
+	d: path("M8.85 1.5 L8.85 15.89");
+	d: "M8.85 1.5 L8.85 15.89";
+}
+
+.button:hover .button_arrow .path_2
+{
+	d: path("M16.19 8.54 8.85 15.89 1.5 8.54");
+	d: "M16.19 8.54 8.85 15.89 1.5 8.54";
+}
+
+.in_animation
+{
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.section_title
+{
+	font-family: proxima_nova_bold;
+	font-size: 40px;
+	margin-bottom: 70px;
+	text-align: center;
 }

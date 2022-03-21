@@ -1,43 +1,34 @@
-"use strict";
+'use strict';
 
-function init_about()
+function about_in_animations()
 {
-	document.querySelectorAll("#about_diagram .circle").forEach(element =>
+	let done = false;
+	let elements = document.querySelectorAll('#about_section .in_animation');
+	let section = document.querySelector('#about_section .photo');
+
+	async function in_animation_check()
 	{
-		element.addEventListener("mouseenter", e =>
+		if (!done && is_in_viewport(section))
 		{
-			TweenMax.to(element, 0.3,
+			for (let i of elements)
 			{
-				width: "17.8%",
-				ease: Power2.easeInOut
-			});
-		});
+				i.style.clipPath = 'circle(49.7%)';
+				await sleep(300);
+			}
 
-		element.addEventListener("mouseleave", e =>
-		{
-			TweenMax.to(element, 0.3,
-			{
-				width: "15.2%",
-				ease: Power2.easeInOut
-			});
-		});
-	});
+			done = true;
+		}
+	}
 
-	document.querySelector("#head_logo").addEventListener("mouseenter", e =>
+	window.addEventListener('scroll', (e) =>
 	{
-		TweenMax.to(document.querySelector("#head_logo"), 0.3,
-		{
-			width: "15%",
-			ease: Power2.easeInOut
-		});
+		in_animation_check();
 	});
 
-	document.querySelector("#head_logo").addEventListener("mouseleave", e =>
+	window.addEventListener('resize', (e) =>
 	{
-		TweenMax.to(document.querySelector("#head_logo"), 0.3,
-		{
-			width: "13.7%",
-			ease: Power2.easeInOut
-		});
+		in_animation_check();
 	});
+
+	in_animation_check();
 }

@@ -1,0 +1,69 @@
+@font-face
+{
+	font-family: raleway_bold;
+	src: url("../resources/fonts/raleway/Raleway-Bold.ttf");
+}
+
+@font-face
+{
+	font-family: raleway_semi_bold;
+	src: url("../resources/fonts/raleway/Raleway-SemiBold.ttf");
+}
+
+@font-face
+{
+	font-family: raleway_medium;
+	src: url("../resources/fonts/raleway/Raleway-Medium.ttf");
+}
+
+@font-face
+{
+	font-family: calibre_semi_bold;
+	src: url("../resources/fonts/calibre/CalibreSemibold.otf");
+}
+
+@font-face
+{
+	font-family: calibre_medium;
+	src: url("../resources/fonts/calibre/CalibreMedium.otf");
+}
+
+@font-face
+{
+	font-family: calibre_regular;
+	src: url("../resources/fonts/calibre/CalibreRegular.otf");
+}
+
+@font-face
+{
+	font-family: calibre_light;
+	src: url("../resources/fonts/calibre/CalibreLight.otf");
+}
+
+@font-face
+{
+	font-family: proxima_nova_bold;
+	src: url("../resources/fonts/proxima_nova/ProximaNovaBold.otf");
+}
+
+@font-face
+{
+	font-family: proxima_nova_semi_bold;
+	src: url("../resources/fonts/proxima_nova/ProximaNovaSemibold.otf");
+}
+
+body
+{
+	--light_blue: #56dcfc;
+	--blue: #197dff;
+	--fade_light_blue: rgba(86, 220, 252, 0.15);
+	--light_gray: #8ea9bf;
+	--white: #f6f9fc;
+	--fade_white: rgb(191, 182, 216);
+	--dark_blue: #101d30;
+	--fade_dark_blue: rgba(16, 29, 48, 0.9);
+	--black_title: #2b3954;
+	--black_text: #425466;
+	--dark_purple: rgb(41, 41, 85);
+	--purple: rgb(52, 52, 102);
+}

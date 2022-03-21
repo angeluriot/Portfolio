@@ -1,404 +1,233 @@
-"use strict";
+'use strict';
 
-let project_width;
-let project_height;
-
-let small_video_width;
-let big_video_width;
-
-let projects;
-let video_divs;
-let videos_html;
-let text_boxes;
-let project_tags = [];
-let project_tag_texts = [];
-let project_buttons;
-let projects_shown = [];
-let projects_anim = [];
-let project_titles;
-let project_titles_text;
-let videos_left = [];
-let load_animations;
-let load_animations_div_1;
-let load_animations_div_2;
-let load_animations_div_3;
-let load_animations_div_4;
-
-function size_tags(i)
+function projects_events()
 {
-	for (let j = 0; j < project_tags[i].length; j++)
+	let sort_by = 'Default';
+	let done;
+	let elements;
+
+	async function in_animation_check()
 	{
-		let tag_text_size = (project_tag_texts[i][j].getBoundingClientRect().right - project_tag_texts[i][j].getBoundingClientRect().left) / project_width;
-		project_tags[i][j].setAttribute("viewBox", "0 0 " + (tag_text_size * 620 + 20).toString() + " 23");
+		for (let i = 0; i < elements.length; i++)
+			if (!done[i] && is_in_viewport(elements[i]))
+			{
+				if (elements[i].classList.contains('other_project'))
+					await sleep(100);
+
+				elements[i].style.opacity = '1';
+				elements[i].style.transform = 'translateY(0)';
+				done[i] = true;
+				await sleep(300);
+			}
 	}
 
-	let tag_shift = 22;
-
-	for (let j = 0; j < project_tags[i].length; j++)
+	window.addEventListener('scroll', (e) =>
 	{
-		if (j > 0)
-			tag_shift += ((project_tags[i][j - 1].getBoundingClientRect().right - project_tags[i][j - 1].getBoundingClientRect().left) / project_width) * 117 + 1;
+		in_animation_check();
+	});
 
-		if (projects[i].classList.contains("on_left"))
-			project_tags[i][j].style.left = tag_shift.toString() + "%";
+	window.addEventListener('resize', (e) =>
+	{
+		in_animation_check();
+	});
 
-		else
-			project_tags[i][j].style.left = (100 - tag_shift).toString() + "%";
+	function video_events()
+	{
+		let videos = document.querySelectorAll('#projects_section .project_view video');
+
+		for (let video of videos)
+		{
+			video.addEventListener("canplay", () =>
+			{
+				video.play();
+				video.parentNode.querySelector('img').style.opacity = '0';
+			});
+		}
 	}
-}
 
-function size_video(i)
-{
-	small_video_width = 32;
-	big_video_width = small_video_width * (15.9 / 9);
-
-	video_divs[i].style.borderRadius = (project_height * 0.1).toString() + "px";
-}
-
-function animate_video(i)
-{
-	video_divs[i].addEventListener('mouseenter', e =>
+	function add_project(project, inverted, featured)
 	{
-		TweenMax.to(video_divs[i], 1,
-		{
-			width: big_video_width.toString() + "%",
-			ease: Power2.easeInOut
-		});
+		let tags = '';
 
-		TweenMax.to(videos_html[i], 0.85,
+		if (featured)
 		{
-			left: "50%",
-			ease: Power2.easeInOut
-		});
+			for (let tag of project.tags)
+				tags += `<a href="${tag.url}" target="_blank">${tag.name}</a>`;
 
-		if (projects[i].classList.contains("on_left"))
-			TweenMax.to(text_boxes[i], 1,
+			if (window.innerWidth > 780)
 			{
-				left: (big_video_width - small_video_width + 15).toString() + "%",
-				ease: Power2.easeInOut
-			});
+				document.querySelector('#projects_section .projects_content').innerHTML += `
+					<div class="in_animation project ${inverted ? 'inverted' : ''}">
+						<div class="project_text">
+							<div class="type">
+								<span>${project.date}</span>
+								<span>•</span>
+								<span>${project.type}</span>
+							</div>
+							<a class="project_title" href="${project.links[0]}" target="_blank">${project.title}</a>
+							<div class="text"><p>${project.description}</p></div>
+							<div class="tags">` + tags + `</div>
+							<div class="links">` + (project.links[1] == 'none' ? '' : `
+								<a class="github" href="${project.links[1]}" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31"><g><path d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"/></g></svg>
+									<span class="bubble">See the code</span>
+								</a>
+								`) + (project.links[2] == 'none' ? '' : `
+								<a class="test" href="${project.links[2]}" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.09 18.64"><g><path d="M14.55 7.52 4.62 1.78A2.08 2.08 0 0 0 1.5 3.58V15.05a2.08 2.08 0 0 0 3.12 1.8l9.93-5.73A2.08 2.08 0 0 0 14.55 7.52Z"/></g></svg>
+									<span class="bubble">Test the program</span>
+								</a>
+								`) + `
+							</div>
+						</div>
+						<div class="project_view">
+							<a href="${project.links[0]}" target="_blank">
+								<img src="${project.image}"/>
+								` + (project.video == 'none' ? '' : `
+								<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+								<video loop muted preload="metadata">
+									<source src="${project.video}" type="video/mp4"/>
+								</video>
+								`) + `
+							</a>
+						</div>
+					</div>`;
+			}
+
+			else
+			{
+				document.querySelector('#projects_section .projects_content').innerHTML += `
+					<div class="in_animation project" style="background-image: url(${project.image});">
+						<div class="project_text"">
+							<div class="type">
+								<span>${project.type}</span>
+								<span>•</span>
+								<span>${project.date}</span>
+							</div>
+							<a class="project_title" href="${project.links[0]}" target="_blank">${project.title}</a>
+							<div class="text"><p>${project.description}</p></div>
+							<div class="tags">` + tags + `</div>
+							<div class="links">` + (project.links[1] == 'none' ? '' : `
+								<a class="github" href="${project.links[1]}" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31"><g><path d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"/></g></svg>
+									<span class="bubble">See the code</span>
+								</a>
+								`) + (project.links[2] == 'none' ? '' : `
+								<a class="test" href="${project.links[2]}" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.09 18.64"><g><path d="M14.55 7.52 4.62 1.78A2.08 2.08 0 0 0 1.5 3.58V15.05a2.08 2.08 0 0 0 3.12 1.8l9.93-5.73A2.08 2.08 0 0 0 14.55 7.52Z"/></g></svg>
+									<span class="bubble">Test the program</span>
+								</a>
+								`) + `
+							</div>
+						</div>
+					</div>`;
+			}
+		}
 
 		else
-			TweenMax.to(text_boxes[i], 1,
+		{
+			for (let tag of project.tags)
+				tags += `<span>${tag.name}</span>`;
+
+			document.querySelector('#projects_section .other_projects_content').innerHTML += `
+				<div class="in_animation other_project">
+					<div class="other_project_content">
+						<div class="header">
+							<div class="logos">
+								<img src="${project.logo}"/>
+								<div class="links">
+									` + (project.links[1] == 'none' ? '' : `
+									<a class="github" href="${project.links[1]}" target="_blank">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31"><g><path d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"/></g></svg>
+									</a>
+									`) + (project.links[2] == 'none' ? '' : `
+									<a class="test" href="${project.links[2]}" target="_blank">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.09 18.64"><g><path d="M14.55 7.52 4.62 1.78A2.08 2.08 0 0 0 1.5 3.58V15.05a2.08 2.08 0 0 0 3.12 1.8l9.93-5.73A2.08 2.08 0 0 0 14.55 7.52Z"/></g></svg>
+									</a>
+									`) + `
+								</div>
+							</div>
+							<a href="${project.links[0]}" target="_blank" class="project_title">${project.title}</a>
+							<p class="text">${project.description}</p>
+						</div>
+						<div class="tags">` + tags + `</div>
+					</div>
+				</div>`;
+		}
+	}
+
+	function generate(data)
+	{
+		document.querySelector('#projects_section .projects_content').innerHTML = '';
+		document.querySelector('#projects_section .other_projects_content').innerHTML = '';
+		let inverted = true;
+		let i = 0;
+
+		if (sort_by == 'Date')
+		{
+			data.projects.sort((a, b) =>
 			{
-				left: (100 - (big_video_width - small_video_width + 15)).toString() + "%",
-				ease: Power2.easeInOut
+				return b.date - a.date;
 			});
-	});
+		}
 
-	video_divs[i].addEventListener('mouseleave', e =>
+		for (let project of data.projects)
+		{
+			let featured;
+
+			if (sort_by == 'Default' || sort_by == 'Date')
+				featured = i < 7;
+			else
+				featured = project.categories.includes(sort_by);
+
+			if (featured)
+				inverted = !inverted;
+
+			add_project(project, inverted, featured);
+			i++;
+		}
+
+		video_events();
+
+		done = [];
+		elements = document.querySelectorAll('#projects_section .in_animation');
+
+		for (let _ of elements)
+			done.push(false);
+
+		in_animation_check();
+	}
+
+	function generate_projects()
 	{
-		TweenMax.to(video_divs[i], 1,
-		{
-			width: small_video_width.toString() + "%",
-			ease: Power2.easeInOut
-		});
+		read_json("resources/jsons/projects.json", generate);
+	}
 
-		TweenMax.to(videos_html[i], 1.15,
-		{
-			left: videos_left[i].toString() + "%",
-			ease: Power2.easeInOut
-		});
-
-		if (projects[i].classList.contains("on_left"))
-			TweenMax.to(text_boxes[i], 1,
-			{
-				left: "15%",
-				ease: Power2.easeInOut
-			});
-
-		else
-			TweenMax.to(text_boxes[i], 1,
-			{
-				left: "85%",
-				ease: Power2.easeInOut
-			});
-	});
-}
-
-function animate_button(i)
-{
-	project_buttons[i].addEventListener('mouseenter', e =>
-	{
-		TweenMax.to(project_buttons[i], 0.4,
-		{
-			width: "10.5%",
-			ease: Power2.easeInOut
-		});
-	});
-
-	project_buttons[i].addEventListener('mouseleave', e =>
-	{
-		TweenMax.to(project_buttons[i], 0.4,
-		{
-			width: "9%",
-			ease: Power2.easeInOut
-		});
-	});
-
-	project_buttons[i].addEventListener('mousedown', e =>
-	{
-		TweenMax.to(project_buttons[i], 0.1,
-		{
-			width: "9.5%",
-			ease: Power2.easeInOut
-		});
-	});
-
-	project_buttons[i].addEventListener('mouseup', e =>
-	{
-		TweenMax.to(project_buttons[i], 0.1,
-		{
-			width: "10.5%",
-			ease: Power2.easeInOut
-		});
-	});
-}
-
-function animate_tags(i)
-{
-	project_tags[i].forEach(element =>
-	{
-		element.addEventListener('mouseenter', e =>
-		{
-			TweenMax.to(element, 0.4,
-			{
-				opacity: "0.5",
-				ease: Power2.easeInOut
-			});
-		});
-
-		element.addEventListener('mouseleave', e =>
-		{
-			TweenMax.to(element, 0.4,
-			{
-				opacity: "1",
-				ease: Power2.easeInOut
-			});
-		});
-	});
-}
-
-function size_title(i)
-{
-	let screen_size = project_titles_text[i].getBoundingClientRect().right - project_titles_text[i].getBoundingClientRect().left;
-	let size = (screen_size / project_width) * 400;
-	let shift = 0.022 * Math.pow(size, 1.07);
-
-	project_titles[i].setAttribute("viewBox", "0 0 " + (size - shift).toString() + " 21");
-}
-
-function size_load(i)
-{
-	load_animations[i].style.width = (((small_video_width * project_width) / 100) * 0.35).toString() + "px";
-	load_animations[i].style.height = (((small_video_width * project_width) / 100) * 0.35).toString() + "px";
-}
-
-function size_project(i)
-{
-	project_width = window.innerWidth * 0.664 * 0.97;
-	project_height = project_width * 0.32;
-
-	projects[i].style.width = project_width.toString() + "px";
-	projects[i].style.height = project_height.toString() + "px";
-
-	text_boxes[i].style.borderRadius = (project_height * 0.1).toString() + "px";
-
-	size_video(i);
-	size_tags(i);
-	size_title(i);
-	size_load(i);
+	let prev_width = window.innerWidth;
+	generate_projects();
 
 	window.addEventListener('resize', () =>
 	{
-		project_width = window.innerWidth * 0.664 * 0.97;
-		project_height = project_width * 0.32;
-
-		projects[i].style.width = project_width.toString() + "px";
-		projects[i].style.height = project_height.toString() + "px";
-
-		text_boxes[i].style.borderRadius = (project_height * 0.1).toString() + "px";
-
-		size_video(i);
-		size_load(i);
-	});
-}
-
-function animate_project(i)
-{
-	projects[i].addEventListener('mouseenter', e =>
-	{
-		TweenMax.to(projects[i], 0.7,
+		if ((prev_width >= 780 && window.innerWidth <= 780) || (prev_width <= 780 && window.innerWidth >= 780))
 		{
-			width: project_width * 1.1,
-			height: project_height * 1.1,
-			ease: Power2.easeInOut
-		});
+			generate_projects();
+			prev_width = window.innerWidth;
+		}
 	});
 
-	projects[i].addEventListener('mouseleave', e =>
+	document.querySelectorAll('#projects_section .sort_choices .choice').forEach((el) =>
 	{
-		TweenMax.to(projects[i], 0.7,
+		el.addEventListener('click', () =>
 		{
-			width: project_width,
-			height: project_height,
-			ease: Power2.easeInOut
-		});
-	});
+			sort_by = el.innerHTML;
+			generate_projects();
 
-	function show(i)
-	{
-		if (projects[i].getBoundingClientRect().top <= window.innerHeight && projects[i].getBoundingClientRect().bottom >= 0 && !projects_shown[i])
-		{
-			projects_shown[i] = true;
-
-			projects_anim[i] = TweenMax.to(projects[i], 0.7,
+			document.querySelectorAll('#projects_section .sort_choices .choice').forEach((el) =>
 			{
-				opacity: 1,
-				ease: Power2.easeInOut
+				el.classList.remove('selected');
 			});
 
-			if	(document.querySelector("#" + projects[i].id + " .html_true_video") != null)
-				document.querySelector("#" + projects[i].id + " .html_true_video").play();
-		}
-
-		else if ((projects[i].getBoundingClientRect().top > window.innerHeight || projects[i].getBoundingClientRect().bottom < 0) && projects_shown[i])
-		{
-			projects_anim[i].kill();
-			projects_shown[i] = false;
-			projects[i].style.opacity = 0;
-
-			if	(document.querySelector("#" + projects[i].id + " .html_true_video") != null)
-				document.querySelector("#" + projects[i].id + " .html_true_video").pause();
-		}
-	}
-
-	projects[i].style.opacity = 0;
-	show(i);
-
-	window.addEventListener('scroll', () => { show(i); });
-	window.addEventListener('resize', () => { show(i); });
-
-	animate_video(i);
-	animate_button(i);
-	animate_tags(i);
-}
-
-function place_all()
-{
-	let place = -8;
-	let pro_projects = document.querySelectorAll("#pro_content .project");
-	let school_projects = document.querySelectorAll("#school_content .project");
-	let personal_projects = document.querySelectorAll("#personal_content .project");
-	let about_projects = document.querySelectorAll("#about_content .project");
-
-	document.querySelector("#pro").style.top = (place - 5).toString() + "%";
-	document.querySelector("#sub_title_pro").style.top = place.toString() + "%";
-	place += 19;
-
-	pro_projects.forEach(element =>
-	{
-		element.style.top = place.toString() + "%";
-		place += 23.5;
+			el.classList.add('selected');
+		});
 	});
-
-	place -= 12;
-	document.querySelector("#end_title_pro").style.top = place.toString() + "%";
-	place += 8;
-	document.querySelector("#school").style.top = (place - 5).toString() + "%";
-	document.querySelector("#sub_title_school").style.top = place.toString() + "%";
-	place += 19;
-
-	school_projects.forEach(element =>
-	{
-		element.style.top = place.toString() + "%";
-		place += 23.5;
-	});
-
-	place -= 12;
-	document.querySelector("#end_title_school").style.top = place.toString() + "%";
-	place += 8;
-	document.querySelector("#personal").style.top = (place - 5).toString() + "%";
-	document.querySelector("#sub_title_personal").style.top = place.toString() + "%";
-	place += 19;
-
-	personal_projects.forEach(element =>
-	{
-		element.style.top = place.toString() + "%";
-		place += 23.5;
-	});
-
-	place -= 12;
-	document.querySelector("#end_title_personal").style.top = place.toString() + "%";
-	place += 8;
-	document.querySelector("#about").style.top = (place - 5).toString() + "%";
-	document.querySelector("#sub_title_about").style.top = place.toString() + "%";
-	place += 7;
-
-	document.querySelector("#about_diagram").style.top = place.toString() + "%";
-
-	place += 47;
-	document.querySelector("#end_title_about").style.top = place.toString() + "%";
-
-	document.querySelector("#scroll_div").style.top = place.toString() + "%";
-	document.querySelector("#scroll_div").style.height = "9%";
-}
-
-function init_project()
-{
-	let project_svgs = document.querySelectorAll(".on_right .text_box .text");
-
-	project_svgs.forEach(element =>
-	{
-		element.setAttribute("viewBox", "-405 0 405 120");
-	});
-
-	projects = document.querySelectorAll(".project");
-	video_divs = document.querySelectorAll(".project .video_div");
-	videos_html = document.querySelectorAll(".project .html_video");
-	text_boxes = document.querySelectorAll(".text_box");
-	project_buttons = document.querySelectorAll(".project .link_button");
-	project_titles = document.querySelectorAll(".project .project_title");
-	project_titles_text = document.querySelectorAll(".project .project_title_text");
-	load_animations = document.querySelectorAll(".project .video_div .lds-ring");
-	load_animations_div_1 = document.querySelectorAll(".project .video_div .lds-ring-1");
-	load_animations_div_2 = document.querySelectorAll(".project .video_div .lds-ring-2");
-	load_animations_div_3 = document.querySelectorAll(".project .video_div .lds-ring-3");
-	load_animations_div_4 = document.querySelectorAll(".project .video_div .lds-ring-4");
-
-	for (let i = 0; i < projects.length; i++)
-	{
-		projects_anim.push(TweenMax.to(projects[i], 0,
-		{
-			ease: Power2.easeInOut
-		}));
-
-		projects_shown.push(false);
-
-		if (projects[i].id == "flappy_bird_ai")
-			videos_left.push(88);
-
-		else if (projects[i].id == "shell")
-			videos_left.push(85);
-
-		else if (projects[i].id == "cars_ai")
-			videos_left.push(88);
-
-		else if (projects[i].id == "magic_royale")
-			videos_left.push(88);
-
-		else
-			videos_left.push(50);
-
-		videos_html[i].style.left = videos_left[i].toString() + "%";
-	}
-
-	for (let i = 0; i < projects.length; i++)
-	{
-		project_tags.push(document.querySelectorAll("#" + projects[i].id + " .text_box .tag"));
-		project_tag_texts.push(document.querySelectorAll("#" + projects[i].id + " .text_box .tag_text"));
-
-		size_project(i);
-		animate_project(i);
-	}
 }

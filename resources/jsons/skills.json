@@ -1,0 +1,231 @@
+{
+	"skills_categories":
+	[
+		{
+			"name" : "Software Development",
+			"skills" :
+			[
+				{
+					"name": "C",
+					"logo": "resources/shapes/skills/C.svg",
+					"link": "https://en.wikipedia.org/wiki/C_(programming_language)"
+				},
+				{
+					"name": "C++",
+					"logo": "resources/shapes/skills/Cpp.svg",
+					"link": "https://en.wikipedia.org/wiki/C%2B%2B"
+				},
+				{
+					"name": "Java",
+					"logo": "resources/shapes/skills/Java.svg",
+					"link": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+				},
+				{
+					"name": "C#",
+					"logo": "resources/shapes/skills/C_sharp.svg",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+				},
+				{
+					"name": "Python",
+					"logo": "resources/shapes/skills/Python.svg",
+					"link": "https://www.python.org/"
+				},
+				{
+					"name": "OCaml",
+					"logo": "resources/shapes/skills/OCaml.svg",
+					"link": "https://ocaml.org/index.html"
+				},
+				{
+					"name": "OpenCL",
+					"logo": "resources/shapes/skills/OpenCL.svg",
+					"link": "https://www.khronos.org/opencl/"
+				},
+				{
+					"name": "CMake",
+					"logo": "resources/shapes/skills/CMake.svg",
+					"link": "https://cmake.org/"
+				},
+				{
+					"name": "Git",
+					"logo": "resources/shapes/skills/Git.svg",
+					"link": "https://git-scm.com/"
+				},
+				{
+					"name": "Unix",
+					"logo": "resources/shapes/skills/Unix.svg",
+					"link": "https://en.wikipedia.org/wiki/Unix"
+				}
+			]
+		},
+		{
+			"name" : "Computer Graphics",
+			"skills" :
+			[
+				{
+					"name": "OpenGL",
+					"logo": "resources/shapes/skills/OpenGL.svg",
+					"link": "https://www.opengl.org//"
+				},
+				{
+					"name": "GLSL",
+					"logo": "resources/images/skills/Glsl.png",
+					"link": "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
+				},
+				{
+					"name": "Unity",
+					"logo": "resources/shapes/skills/Unity.svg",
+					"link": "https://unity.com/"
+				},
+				{
+					"name": "JavaFX",
+					"logo": "resources/shapes/skills/JavaFX.svg",
+					"link": "https://openjfx.io"
+				},
+				{
+					"name": "SFML",
+					"logo": "resources/shapes/skills/Sfml.svg",
+					"link": "https://www.sfml-dev.org/index.php"
+				},
+				{
+					"name": "ImGui",
+					"logo": "resources/shapes/skills/ImGui.svg",
+					"link": "https://github.com/ocornut/imgui"
+				},
+				{
+					"name": "GLM",
+					"logo": "resources/shapes/skills/Glm.svg",
+					"link": "https://glm.g-truc.net/0.9.9/"
+				}
+			]
+		},
+		{
+			"name" : "Front-end Web",
+			"skills" :
+			[
+				{
+					"name": "HTML",
+					"logo": "resources/shapes/skills/Html.svg",
+					"link": "https://en.wikipedia.org/wiki/HTML"
+				},
+				{
+					"name": "CSS",
+					"logo": "resources/shapes/skills/Css.svg",
+					"link": "https://en.wikipedia.org/wiki/CSS"
+				},
+				{
+					"name": "JavaScript",
+					"logo": "resources/shapes/skills/JavaScript.svg",
+					"link": "https://en.wikipedia.org/wiki/JavaScript"
+				},
+				{
+					"name": "ThreeJS",
+					"logo": "resources/shapes/skills/ThreeJS.svg",
+					"link": "https://threejs.org"
+				},
+				{
+					"name": "AnimeJS",
+					"logo": "resources/images/skills/AnimeJS.png",
+					"link": "https://animejs.com"
+				},
+				{
+					"name": "GreenSock",
+					"logo": "resources/images/skills/GreenSock.png",
+					"link": "https://greensock.com"
+				},
+				{
+					"name": "Git",
+					"logo": "resources/shapes/skills/Git.svg",
+					"link": "https://git-scm.com/"
+				}
+			]
+		},
+		{
+			"name" : "Back-end Web",
+			"skills" :
+			[
+				{
+					"name": "JavaScript",
+					"logo": "resources/shapes/skills/JavaScript.svg",
+					"link": "https://en.wikipedia.org/wiki/JavaScript"
+				},
+				{
+					"name": "TypeScript",
+					"logo": "resources/shapes/skills/TypeScript.svg",
+					"link": "https://www.typescriptlang.org"
+				},
+				{
+					"name": "NodeJS",
+					"logo": "resources/shapes/skills/NodeJS.svg",
+					"link": "https://nodejs.org/en/"
+				},
+				{
+					"name": "ExpressJS",
+					"logo": "resources/images/skills/ExpressJS.png",
+					"link": "http://expressjs.com"
+				},
+				{
+					"name": "Socket.io",
+					"logo": "resources/shapes/skills/Socket_io.svg",
+					"link": "https://socket.io"
+				},
+				{
+					"name": "SQL",
+					"logo": "resources/shapes/skills/Sql.svg",
+					"link": "https://sql.sh"
+				},
+				{
+					"name": "MongoDB",
+					"logo": "resources/shapes/skills/MongoDB.svg",
+					"link": "https://www.mongodb.com"
+				},
+				{
+					"name": "Git",
+					"logo": "resources/shapes/skills/Git.svg",
+					"link": "https://git-scm.com/"
+				}
+			]
+		},
+		{
+			"name" : "Design",
+			"skills" :
+			[
+				{
+					"name": "After Effects",
+					"logo": "resources/shapes/skills/After_effects.svg",
+					"link": "https://www.adobe.com/products/aftereffects.html"
+				},
+				{
+					"name": "Illustrator",
+					"logo": "resources/shapes/skills/Illustrator.svg",
+					"link": "https://www.adobe.com/products/illustrator.html"
+				},
+				{
+					"name": "Photoshop",
+					"logo": "resources/shapes/skills/Photoshop.svg",
+					"link": "https://www.adobe.com/products/photoshop.html"
+				},
+				{
+					"name": "SolidWorks",
+					"logo": "resources/images/skills/SolidWorks.png",
+					"link": "https://www.solidworks.com/"
+				}
+			]
+		},
+		{
+			"name" : "Blockchain",
+			"skills" :
+			[
+				{
+					"name": "Solidity",
+					"logo": "resources/shapes/skills/Solidity.svg",
+					"link": "https://soliditylang.org/"
+				},
+				{
+					"name": "Web3.js",
+					"logo": "resources/images/skills/Web3JS.png",
+					"link": "https://github.com/ChainSafe/web3.js"
+				}
+			]
+		}
+	]
+}

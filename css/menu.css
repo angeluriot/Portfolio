@@ -1,102 +1,87 @@
-@font-face
+#menu_div
 {
-	font-family: inter_extra_bold;
-	src: url("../resources/fonts/inter/Inter-ExtraBold.woff2");
-}
-
-#menu
-{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	position: fixed;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	background-color: black;
-	z-index: 9;
-	font-size: 2vw;
-	overflow: hidden;
-	pointer-events: none;
-}
-
-.menu_div
-{
-	position: absolute;
-	z-index: 10;
-	width: 15%;
+	z-index: 100;
+	width: clamp(0px, 100%, 400px);
 	height: 100%;
-	overflow: hidden;
+	background-color: var(--dark_blue);
+	right: 0px;
+	transform: translateX(clamp(0px, 100%, 400px));
+	transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+#menu_div .menu_icon
+{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 20px 20px 20px 20px;
+	cursor: pointer;
+	stroke: var(--white);
+	stroke-width: 10px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	width: 30px;
+	transition: stroke 0.2s ease;
+}
+
+#menu_div .menu_icon:hover
+{
+	stroke: var(--light_blue);
+}
+
+#menu_div .menu ol
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+}
+
+#menu_div .menu li
+{
+	display: flex;
+}
+
+#menu_div .menu a
+{
+	display: flex;
 	pointer-events: all;
+	padding: 15px 22.5px;
+	font-family: raleway_semi_bold;
+	font-size: 20px;
+	color: var(--white);
+	text-decoration: none;
 }
 
-#menu .circle
+#menu_div .menu .not_button
 {
-	position: absolute;
-	fill: white;
-	width: 0%;
-	mix-blend-mode: difference;
-	z-index: 11;
-	transform: translate(-50%, -50%);
-	pointer-events: none;
+	transition: color 0.2s ease;
 }
 
-#menu .element
+#menu_div .menu .not_button:hover
 {
-	position: absolute;
-	top: 48%;
-	z-index: 12;
-	transform: translate(0%, -50%);
-	font-family: inter_extra_bold;
-	color: white;
-	white-space: nowrap;
-	mix-blend-mode: difference;
-	pointer-events: none;
+	color: var(--light_blue);
 }
 
-#menu .text
+#menu_div .menu .button
 {
-	text-align: left;
-	pointer-events: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--light_blue);
+	padding: 13.5px 30px 13.5px 34.5px;
 }
 
-#menu #menu_pro
+#menu_div .menu .button .button_arrow
 {
-	left: 45.01%;
-	width: 8.5%;
-}
-
-#menu #menu_school
-{
-	left: 53.5%;
-	width: 12%;
-}
-
-#menu #menu_personal
-{
-	left: 65.5%;
-	width: 14%;
-}
-
-#menu #menu_about
-{
-	left: 79.5%;
-	width: 15%;
-}
-
-#menu #menu_pro .element
-{
-	left: 30%;
-}
-
-#menu #menu_school .element
-{
-	left: 21.5%;
-}
-
-#menu #menu_personal .element
-{
-	left: 18.5%;
-}
-
-#menu #menu_about .element
-{
-	left: 18%;
+	height: 15px;
+	margin-left: 15px;
+	transform: rotate(-90deg);
 }

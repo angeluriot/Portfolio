@@ -1,0 +1,184 @@
+#projects_section .other_projects_content
+{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 20px 20px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media screen and (max-width: 1250px)
+{
+	#projects_section .other_projects_content
+	{
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}
+
+#projects_section .other_project
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: var(--purple);
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+	border-radius: 15px;
+	overflow: hidden;
+	transition: opacity 0.5s ease-in-out, filter 0.4s ease, transform 0.4s ease !important;
+}
+
+#projects_section .other_project:hover
+{
+	filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
+	transform: translate(0px, -10px) !important;
+}
+
+#projects_section .other_project.in_animation
+{
+	opacity: 0;
+	transform: translateY(40px);
+}
+
+#projects_section .other_project_content
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	height: calc(100% - 80px);
+	padding: 40px 35px 40px 35px;
+}
+
+@media screen and (max-width: 500px)
+{
+	#projects_section .other_project_content
+	{
+		padding: 40px 25px 40px 25px;
+	}
+}
+
+#projects_section .other_project .other_project_link
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#projects_section .other_project .header
+{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+#projects_section .other_project .logos
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+#projects_section .other_project .logos img
+{
+	width: 45px;
+}
+
+#projects_section .other_project .logos .links
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+#projects_section .other_project .logos .links a
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#projects_section .other_project .logos .links svg
+{
+	z-index: 10;
+	width: 21px;
+	fill: none;
+	stroke-width: 1.9px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: var(--fade_white);
+	opacity: 0.8;
+	transition: stroke 0.2s ease, opacity 0.2s ease;
+}
+
+#projects_section .other_project .logos .links .github svg:hover
+{
+	opacity: 1;
+	stroke: var(--light_blue);
+}
+
+#projects_section .other_project .logos .links .test svg:hover
+{
+	opacity: 1;
+	stroke: var(--light_blue);
+}
+
+#projects_section .other_project .project_title
+{
+	font-family: calibre_semi_bold;
+	font-size: 28px;
+	color: var(--white);
+	text-decoration: none;
+	margin-bottom: 12px;
+	transition: color 0.2s ease;
+}
+
+#projects_section .other_project .project_title::before
+{
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+#projects_section .other_project .project_title:hover
+{
+	color: var(--light_blue);
+}
+
+#projects_section .other_project .text
+{
+	font-family: calibre_regular;
+	font-size: 20px;
+	text-align: start;
+	color: var(--fade_white);
+	margin-bottom: 25px;
+}
+
+#projects_section .other_project .tags
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 15px;
+}
+
+#projects_section .other_project .tags span
+{
+	font-family: raleway_semi_bold;
+	font-size: 15px;
+	color: var(--light_blue);
+	white-space: nowrap;
+	opacity: 0.8;
+}

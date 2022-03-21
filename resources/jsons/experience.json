@@ -1,0 +1,45 @@
+{
+	"experience":
+	[
+		{
+			"date": 2019,
+			"type": "Technician Intern",
+			"title": "C.E.A. Paris-Saclay",
+			"description": "A two months internship at the C.E.A. Paris-Saclay, my assignment was to program a computer simulation predicting the behavior of neutrons in the core of a nuclear reactor.",
+			"tags":
+			[
+				{ "name": "C++", "url": "https://en.wikipedia.org/wiki/C%2B%2B" }
+			],
+			"link": "https://www.cea.fr/english",
+			"video": "none",
+			"image": "resources/images/experience/Cea.png"
+		},
+		{
+			"date": 2021,
+			"type": "Research Intern",
+			"title": "C.E.E.S.A.R.",
+			"description": "A one month worker internship where I created a database of autopsy reports and modified high speed crash test footage.",
+			"tags":
+			[
+				{ "name": "After Effects", "url": "https://www.adobe.com/products/aftereffects.html" }
+			],
+			"link": "https://www.ceesar.fr/en/",
+			"video": "none",
+			"image": "resources/images/experience/Ceesar.jpg"
+		},
+		{
+			"date": 2015,
+			"type": "Self-employed",
+			"title": "DIMENSION",
+			"description": "I create videos for a popular science program on the Internet called DIMENSION. It's a 5 minutes animated video format where I talk about many topics such as astrophysics, mathematics or computer science.",
+			"tags":
+			[
+				{ "name": "After Effects", "url": "https://www.adobe.com/products/aftereffects.html" },
+				{ "name": "Illustrator", "url": "https://www.adobe.com/products/illustrator.html" }
+			],
+			"link": "https://www.youtube.com/c/DIMENSI0N",
+			"video": "resources/videos/experience/Dimension.mp4",
+			"image": "resources/images/experience/Dimension.png"
+		}
+	]
+}
