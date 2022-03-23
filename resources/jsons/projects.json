@@ -179,7 +179,7 @@
 			"date": 2021,
 			"type": "Personal Project",
 			"title": "Portfolio",
-			"description": "This project is a website portfolio made to presenting my computer science projects...",
+			"description": "This project is a website portfolio made to present my computer science projects. It is a one-page responsive website programmed with HTML, CSS, and JavaScript...",
 			"tags":
 			[
 				{ "name": "HTML", "url": "https://en.wikipedia.org/wiki/HTML" },
