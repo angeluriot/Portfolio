@@ -1,8 +1,17 @@
 #menu_div
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	position: fixed;
 	z-index: 100;
@@ -10,8 +19,14 @@
 	height: 100%;
 	background-color: var(--dark_blue);
 	right: 0px;
+	-webkit-transform: translateX(clamp(0px, 100%, 400px));
+	-ms-transform: translateX(clamp(0px, 100%, 400px));
 	transform: translateX(clamp(0px, 100%, 400px));
+	-webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+	transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 	transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
 #menu_div .menu_icon
@@ -27,6 +42,8 @@
 	stroke-linecap: round;
 	stroke-linejoin: round;
 	width: 30px;
+	-webkit-transition: stroke 0.2s ease;
+	-o-transition: stroke 0.2s ease;
 	transition: stroke 0.2s ease;
 }
 
@@ -37,20 +54,33 @@
 
 #menu_div .menu ol
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 50px;
 }
 
 #menu_div .menu li
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 #menu_div .menu a
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	pointer-events: all;
 	padding: 15px 22.5px;
@@ -62,6 +92,8 @@
 
 #menu_div .menu .not_button
 {
+	-webkit-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
 	transition: color 0.2s ease;
 }
 
@@ -72,8 +104,14 @@
 
 #menu_div .menu .button
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	color: var(--light_blue);
 	padding: 13.5px 30px 13.5px 34.5px;
@@ -83,5 +121,7 @@
 {
 	height: 15px;
 	margin-left: 15px;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 }

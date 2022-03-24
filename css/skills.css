@@ -15,6 +15,8 @@
 
 #skills_section .skills_content
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 }
@@ -22,18 +24,34 @@
 #skills_section .box
 {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-filter: drop-shadow(0px 0px 10px rgba(28, 28, 51, 0.15));
 	filter: drop-shadow(0px 0px 10px rgba(28, 28, 51, 0.15));
 }
 
 #skills_section .box .menu
 {
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -61,28 +79,44 @@
 	padding: 50px 60px 50px 60px;
 }
 
-@keyframes enter_anim { from { transform: translateY(25px); opacity: 0; } to { transform: translateY(0px); opacity: 1; } }
-@-webkit-keyframes enter_anim { from { transform: translateY(25px); opacity: 0; } to { transform: translateY(0px); opacity: 1; } }
+@keyframes enter_anim { from { -webkit-transform: translateY(25px); transform: translateY(25px); opacity: 0; } to { -webkit-transform: translateY(0px); transform: translateY(0px); opacity: 1; } }
+@-webkit-keyframes enter_anim { from { -webkit-transform: translateY(25px); transform: translateY(25px); opacity: 0; } to { -webkit-transform: translateY(0px); transform: translateY(0px); opacity: 1; } }
 
 #skills_section .box .box_content .skills_list
 {
 	width: 100%;
+	display: -ms-grid;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 100px);
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	grid-gap: 50px;
 	opacity: 0;
+	-webkit-transform: translateY(25px);
+	-ms-transform: translateY(25px);
 	transform: translateY(25px);
+	-webkit-animation: enter_anim 0.5s ease 1 forwards;
 	animation: enter_anim 0.5s ease 1 forwards;
 }
 
 #skills_section .box .box_content .skills_list .skill
 {
 	height: 125px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	width: 100px;
 	text-decoration: none;
@@ -91,12 +125,20 @@
 #skills_section .box .box_content .skills_list .skill img
 {
 	width: 95%;
+	-webkit-transform: scale(0.88);
+	-ms-transform: scale(0.88);
 	transform: scale(0.88);
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: -webkit-transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
 	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 #skills_section .box .box_content .skills_list .skill:hover img
 {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
 	transform: scale(1);
 }
 
@@ -122,7 +164,12 @@
 {
 	#skills_section .box
 	{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		gap: 70px;
 		min-height: 0px;
@@ -145,6 +192,7 @@
 	{
 		#skills_section .box .box_content .skills_list
 		{
+			-ms-flex-pack: distribute;
 			justify-content: space-around;
 		}
 	}
@@ -153,6 +201,8 @@
 	{
 		#skills_section .box .box_content .skills_list
 		{
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
 			justify-content: space-between;
 		}
 
@@ -167,6 +217,7 @@
 	{
 		#skills_section .box .box_content .skills_list
 		{
+			-ms-flex-pack: distribute;
 			justify-content: space-around;
 		}
 	}

@@ -1,23 +1,40 @@
 #header_div
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: fixed;
 	pointer-events: none;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	z-index: 100;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	height: 100px;
+	-webkit-box-shadow: none;
 	box-shadow: none;
+	-webkit-transition: height 0.4s ease-in-out, top 0.5s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+	transition: height 0.4s ease-in-out, top 0.5s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+	-o-transition: height 0.4s ease-in-out, box-shadow 0.4s ease-in-out, top 0.5s ease-in-out;
 	transition: height 0.4s ease-in-out, box-shadow 0.4s ease-in-out, top 0.5s ease-in-out;
+	transition: height 0.4s ease-in-out, box-shadow 0.4s ease-in-out, top 0.5s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
 }
 
 #header
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	padding: 0px 50px;
 	width: 100%;
@@ -25,24 +42,38 @@
 	background-color: rgba(16, 29, 48, 0);
 	-webkit-backdrop-filter: none;
 	backdrop-filter: none;
+	-webkit-transition: background-color 0.4s ease-in-out, -webkit-backdrop-filter 0.4s ease-in-out;
+	transition: background-color 0.4s ease-in-out, -webkit-backdrop-filter 0.4s ease-in-out;
+	-o-transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out;
 	transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out;
+	transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out, -webkit-backdrop-filter 0.4s ease-in-out;
 }
 
 #header .nav
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	width: 100%;
 }
 
 #header .logo
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 #header .logo a
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	pointer-events: all;
 	width: 35px;
@@ -51,27 +82,37 @@
 
 #header .logo img
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 #header .menu
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 #header .menu ol
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 #header .menu li
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0px 10px;
 }
 
 #header .menu a
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	pointer-events: all;
 	padding: 10px 15px;
@@ -83,6 +124,8 @@
 
 #header .menu .not_button
 {
+	-webkit-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
 	transition: color 0.2s ease;
 }
 
@@ -93,8 +136,14 @@
 
 #header .menu .button
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	color: var(--light_blue);
 	padding: 9px 20px 9px 23px;
@@ -104,6 +153,8 @@
 {
 	height: 12px;
 	margin-left: 12px;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 }
 
@@ -119,6 +170,8 @@
 	stroke-linecap: round;
 	stroke-linejoin: round;
 	height: 30px;
+	-webkit-transition: stroke 0.2s ease;
+	-o-transition: stroke 0.2s ease;
 	transition: stroke 0.2s ease;
 }
 
@@ -130,6 +183,12 @@
 #header .in_animation
 {
 	opacity: 0;
+	-webkit-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
 	transform: translateY(-20px);
+	-webkit-transition: opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 	transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
