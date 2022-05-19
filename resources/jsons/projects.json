@@ -155,6 +155,26 @@
 			"categories": ["Personal", "Simulations"]
 		},
 		{
+			"date": 2022,
+			"type": "Personal Project",
+			"title": "Neural Network",
+			"description": "This is a handmade neural network library for Python. It supports multiple layers, activation functions, optimizers... You can easily create a model and train it with backpropagation...",
+			"tags":
+			[
+				{ "name": "Python", "url": "https://www.python.org/" }
+			],
+			"links":
+			[
+				"https://github.com/angeluriot/Neural_network",
+				"https://github.com/angeluriot/Neural_network",
+				"none"
+			],
+			"video": "none",
+			"image": "resources/images/projects/Neural_network.png",
+			"logo": "resources/shapes/projects/Neural_network.svg",
+			"categories": ["Personal", "AI"]
+		},
+		{
 			"date": 2020,
 			"type": "Personal Project",
 			"title": "Sandbox",
