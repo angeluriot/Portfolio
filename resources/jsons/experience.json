@@ -2,8 +2,23 @@
 	"experience":
 	[
 		{
+			"date": 2022,
+			"type": "Software engineer intern",
+			"title": "Fitthree Pte Ltd",
+			"description": "Design a system that establish optimized delivery routes for the company's drivers based on a list of orders and a set of constraints. The generated routes will be fed to the tracking management system.",
+			"tags":
+			[
+				{ "name": "C#", "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" },
+				{ "name": "Entity Framework", "url": "https://docs.microsoft.com/en-us/ef/" },
+				{ "name": "SQL", "url": "https://sql.sh" }
+			],
+			"link": "https://fitthree.com/",
+			"video": "none",
+			"image": "resources/images/experience/Fitthree.png"
+		},
+		{
 			"date": 2019,
-			"type": "Technician Intern",
+			"type": "Developer intern",
 			"title": "C.E.A. Paris-Saclay",
 			"description": "A two months internship at the C.E.A. Paris-Saclay, my assignment was to program a computer simulation predicting the behavior of neutrons in the core of a nuclear reactor.",
 			"tags":
@@ -29,7 +44,7 @@
 		},
 		{
 			"date": 2015,
-			"type": "Self-employed",
+			"type": "Video producer",
 			"title": "DIMENSION",
 			"description": "I create videos for a popular science program on the Internet called DIMENSION. It's a 5 minutes animated video format where I talk about many topics such as astrophysics, mathematics or computer science.",
 			"tags":

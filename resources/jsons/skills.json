@@ -179,6 +179,11 @@
 					"link": "https://www.mongodb.com"
 				},
 				{
+					"name": "Stripe",
+					"logo": "resources/shapes/skills/Stripe.svg",
+					"link": "https://stripe.com/"
+				},
+				{
 					"name": "Git",
 					"logo": "resources/shapes/skills/Git.svg",
 					"link": "https://git-scm.com/"
@@ -208,6 +213,27 @@
 					"name": "SolidWorks",
 					"logo": "resources/images/skills/SolidWorks.png",
 					"link": "https://www.solidworks.com/"
+				}
+			]
+		},
+		{
+			"name" : "Machine learning",
+			"skills" :
+			[
+				{
+					"name": "Theory",
+					"logo": "resources/shapes/skills/Theory.svg",
+					"link": "https://github.com/angeluriot/Neural_network"
+				},
+				{
+					"name": "Tensorflow",
+					"logo": "resources/shapes/skills/Tensorflow.svg",
+					"link": "https://www.tensorflow.org/"
+				},
+				{
+					"name": "Keras",
+					"logo": "resources/shapes/skills/Keras.svg",
+					"link": "https://keras.io/"
 				}
 			]
 		},
