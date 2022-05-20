@@ -99,7 +99,9 @@
 			"tags":
 			[
 				{ "name": "C++", "url": "https://en.wikipedia.org/wiki/C%2B%2B" },
-				{ "name": "SFML", "url": "https://www.sfml-dev.org/index.php" }
+				{ "name": "OpenCL", "url": "https://www.khronos.org/opencl/" },
+				{ "name": "OpenGL", "url": "https://www.opengl.org//" },
+				{ "name": "ImGui", "url": "https://github.com/ocornut/imgui" }
 			],
 			"links":
 			[
