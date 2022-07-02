@@ -176,7 +176,7 @@ function projects_events()
 			let featured;
 
 			if (sort_by == 'Default' || sort_by == 'Date')
-				featured = i < 7;
+				featured = i < 10;
 			else
 				featured = project.categories.includes(sort_by);
 

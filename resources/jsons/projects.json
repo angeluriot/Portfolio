@@ -137,6 +137,27 @@
 			"categories": ["Personal", "Web"]
 		},
 		{
+			"date": 2022,
+			"type": "Personal Project",
+			"title": "Proverbot",
+			"description": "This project is a bot that generate random French proverb images and post them every day on its own Twitter account (with more than 10 thousand followers)...",
+			"tags":
+			[
+				{ "name": "TypeScript", "url": "https://www.typescriptlang.org/" },
+				{ "name": "NodeJS", "url": "https://nodejs.org/en/" }
+			],
+			"links":
+			[
+				"https://twitter.com/TheProverbot",
+				"https://github.com/angeluriot/Proverbot",
+				"https://twitter.com/TheProverbot"
+			],
+			"video": "resources/videos/projects/Proverbot.mp4",
+			"image": "resources/images/projects/Proverbot.png",
+			"logo": "resources/shapes/projects/Proverbot.svg",
+			"categories": ["Personal", "Web", "AI"]
+		},
+		{
 			"date": 2021,
 			"type": "School Project",
 			"title": "OBIS 3D",

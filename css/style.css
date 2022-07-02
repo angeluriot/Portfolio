@@ -23,6 +23,17 @@ ol
 	list-style: none;
 }
 
+#loading_screen
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0b1b2e;
+	z-index: 10000;
+}
+
 #main
 {
 	display: -webkit-box;
