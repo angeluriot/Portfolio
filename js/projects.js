@@ -31,20 +31,6 @@ function projects_events()
 		in_animation_check();
 	});
 
-	function video_events()
-	{
-		let videos = document.querySelectorAll('#projects_section .project_view video');
-
-		for (let video of videos)
-		{
-			video.addEventListener("canplay", () =>
-			{
-				video.play();
-				video.parentNode.querySelector('img').style.opacity = '0';
-			});
-		}
-	}
-
 	function add_project(project, inverted, featured)
 	{
 		let tags = '';
@@ -187,8 +173,6 @@ function projects_events()
 			i++;
 		}
 
-		video_events();
-
 		done = [];
 		elements = document.querySelectorAll('#projects_section .in_animation');
 
@@ -196,6 +180,8 @@ function projects_events()
 			done.push(false);
 
 		in_animation_check();
+		videos_start_event();
+		videos_scroll_event();
 	}
 
 	function generate_projects()

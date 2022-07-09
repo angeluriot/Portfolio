@@ -27,20 +27,6 @@ function experience_events()
 		in_animation_check();
 	});
 
-	function video_events()
-	{
-		let videos = document.querySelectorAll('#experience_section .job_view video');
-
-		for (let video of videos)
-		{
-			video.addEventListener("canplay", () =>
-			{
-				video.play();
-				video.parentNode.querySelector('img').style.opacity = '0';
-			});
-		}
-	}
-
 	function add_job(job, inverted)
 	{
 		let tags = '';
@@ -105,8 +91,6 @@ function experience_events()
 			add_job(job, inverted);
 		}
 
-		video_events();
-
 		done = [];
 		elements = document.querySelectorAll('#experience_section .in_animation');
 
@@ -114,6 +98,8 @@ function experience_events()
 			done.push(false);
 
 		in_animation_check();
+		videos_start_event();
+		videos_scroll_event();
 	}
 
 	function generate_experience()

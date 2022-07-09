@@ -18,6 +18,7 @@ window.onload = () =>
 	experience_events();
 
 	in_animations();
+	videos_events();
 
 	document.querySelector('#loading_screen').style.display = 'none';
 };

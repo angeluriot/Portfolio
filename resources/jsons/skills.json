@@ -118,6 +118,21 @@
 					"link": "https://en.wikipedia.org/wiki/JavaScript"
 				},
 				{
+					"name": "TypeScript",
+					"logo": "resources/shapes/skills/TypeScript.svg",
+					"link": "https://www.typescriptlang.org"
+				},
+				{
+					"name": "jQuery",
+					"logo": "resources/shapes/skills/JQuery.svg",
+					"link": "https://jquery.com/"
+				},
+				{
+					"name": "Bootstrap",
+					"logo": "resources/shapes/skills/Bootstrap.svg",
+					"link": "https://getbootstrap.com/"
+				},
+				{
 					"name": "ThreeJS",
 					"logo": "resources/shapes/skills/ThreeJS.svg",
 					"link": "https://threejs.org"
@@ -162,6 +177,11 @@
 					"name": "ExpressJS",
 					"logo": "resources/images/skills/ExpressJS.png",
 					"link": "http://expressjs.com"
+				},
+				{
+					"name": "C#",
+					"logo": "resources/shapes/skills/C_sharp.svg",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
 				},
 				{
 					"name": "Socket.io",
