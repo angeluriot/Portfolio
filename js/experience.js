@@ -98,7 +98,6 @@ function experience_events()
 			done.push(false);
 
 		in_animation_check();
-		videos_start_event();
 		videos_scroll_event();
 	}
 

@@ -1,16 +1,3 @@
-function videos_start_event()
-{
-	let videos = document.querySelectorAll('video');
-
-	for (let video of videos)
-	{
-		video.addEventListener('canplay', () =>
-		{
-			video.parentNode.querySelector('img').style.opacity = '0';
-		});
-	}
-}
-
 function videos_scroll_event()
 {
 	let videos = document.querySelectorAll('video');
@@ -19,7 +6,10 @@ function videos_scroll_event()
 		if (video.readyState == 4)
 		{
 			if (video.getBoundingClientRect().top <= window.innerHeight && video.getBoundingClientRect().bottom >= 0 && video.paused)
+			{
+				video.parentNode.querySelector('img').style.opacity = '0';
 				video.play();
+			}
 
 			else if ((video.getBoundingClientRect().top > window.innerHeight || video.getBoundingClientRect().bottom < 0) && !video.paused)
 				video.pause();
