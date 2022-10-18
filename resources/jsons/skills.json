@@ -123,6 +123,11 @@
 					"link": "https://www.typescriptlang.org"
 				},
 				{
+					"name": "Svelte",
+					"logo": "resources/shapes/skills/Svelte.svg",
+					"link": "https://svelte.dev/"
+				},
+				{
 					"name": "jQuery",
 					"logo": "resources/shapes/skills/JQuery.svg",
 					"link": "https://jquery.com/"
@@ -131,6 +136,16 @@
 					"name": "Bootstrap",
 					"logo": "resources/shapes/skills/Bootstrap.svg",
 					"link": "https://getbootstrap.com/"
+				},
+				{
+					"name": "Tailwind",
+					"logo": "resources/shapes/skills/Tailwind.svg",
+					"link": "https://tailwindcss.com/"
+				},
+				{
+					"name": "Vite",
+					"logo": "resources/shapes/skills/Vite.svg",
+					"link": "https://vitejs.dev/"
 				},
 				{
 					"name": "ThreeJS",
