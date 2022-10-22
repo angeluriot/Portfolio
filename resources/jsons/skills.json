@@ -245,6 +245,11 @@
 					"link": "https://www.adobe.com/products/photoshop.html"
 				},
 				{
+					"name": "Figma",
+					"logo": "resources/shapes/skills/Figma.svg",
+					"link": "https://www.figma.com/"
+				},
+				{
 					"name": "SolidWorks",
 					"logo": "resources/images/skills/SolidWorks.png",
 					"link": "https://www.solidworks.com/"
