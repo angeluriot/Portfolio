@@ -37,7 +37,6 @@
 	-webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
 	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
 	border-radius: 15px;
-	overflow: hidden;
 	-webkit-transition: opacity 0.5s ease-in-out, -webkit-filter 0.4s ease, -webkit-transform 0.4s ease !important;
 	transition: opacity 0.5s ease-in-out, -webkit-filter 0.4s ease, -webkit-transform 0.4s ease !important;
 	-o-transition: opacity 0.5s ease-in-out, filter 0.4s ease, transform 0.4s ease !important;
