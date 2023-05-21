@@ -40,6 +40,7 @@
 #skills_section .box .menu
 {
 	height: 100%;
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -55,13 +56,24 @@
 	align-items: center;
 }
 
+#skills_section .box .menu .selector {
+	z-index: 2;
+	width: 320px;
+	transition: .5s;
+	position: absolute;
+	margin-right: -40px;
+	border-radius: 20px 0 0 20px;
+	background-color: white;
+}
+
+
 #skills_section .box .menu .category
 {
 	width: 280px;
+	z-index: 3;
 	border-radius: 20px;
-	background-color: white;
 	white-space: nowrap;
-	padding: 30px 40px 30px 0px;
+	padding: 30px 40px 30px 0;
 	margin-right: -40px;
 	font-family: proxima_nova_semi_bold;
 	font-size: 16px;
