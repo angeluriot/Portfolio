@@ -1,5 +1,10 @@
 'use strict';
 
+function is_safari()
+{
+	return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+}
+
 function sleep(ms)
 {
 	return new Promise(resolve => setTimeout(resolve, ms));

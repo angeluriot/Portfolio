@@ -9,6 +9,9 @@ async function in_animations()
 
 window.onload = () =>
 {
+	if (!is_safari())
+		document.querySelector('#safari_warning').style.display = 'none';
+
 	document.documentElement.scrollLeft = 0;
 
 	header_events();

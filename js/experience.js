@@ -51,7 +51,7 @@ function experience_events()
 					<div class="job_view">
 						<a href="${job.link}" target="_blank">
 							<img src="${job.image}"/>
-							` + (job.video == 'none' ? '' : `
+							` + (job.video == 'none' || is_safari() ? '' : `
 							<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 							<video loop muted preload="metadata">
 								<source src="${job.video}" type="video/mp4"/>

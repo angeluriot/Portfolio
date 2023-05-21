@@ -69,7 +69,7 @@ function projects_events()
 						<div class="project_view">
 							<a href="${project.links[0]}" target="_blank">
 								<img src="${project.image}"/>
-								` + (project.video == 'none' ? '' : `
+								` + (project.video == 'none' || is_safari() ? '' : `
 								<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 								<video loop muted preload="metadata">
 									<source src="${project.video}" type="video/mp4"/>
