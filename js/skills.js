@@ -4,18 +4,19 @@ function skills_events()
 {
 	function events()
 	{
-		let categories = document.querySelectorAll('#skills_section .box .menu .category');
-		let skills_lists = document.querySelectorAll('#skills_section .box .box_content .skills_list');
+		let categories = document.querySelectorAll('#skills_section .box .menu .category'),
+			skills_lists = document.querySelectorAll('#skills_section .box .box_content .skills_list');
 
 		function choose(i)
 		{
+			let skill_selector = document.querySelector('#skills_section .box .menu .selector');
+			skill_selector.style.top = (100 / categories.length) * i + '%';
+
 			for (let j = 0; j < categories.length; j++)
 			{
-				categories[j].style.backgroundColor = 'rgba(0, 0, 0, 0)';
 				categories[j].style.cursor = 'pointer';
 			}
 
-			categories[i].style.backgroundColor = 'white';
 			categories[i].style.cursor = 'default';
 
 			for (let j = 0; j < skills_lists.length; j++)
@@ -42,8 +43,10 @@ function skills_events()
 
 		if (window.innerWidth > 930)
 		{
-			let menu = '';
-			let box_content = '';
+			let menu = '',
+			 	box_content = '';
+
+			menu += `<div class="selector" style="height: calc(100% / ${my_data.skills_categories.length})"></div>`;
 
 			for (let category of my_data.skills_categories)
 			{
