@@ -68,7 +68,7 @@ function projects_events()
 						</div>
 						<div class="project_view">
 							<a href="${project.links[0]}" target="_blank">
-								<img src="${project.image}"/>
+								<img src="${project.image}" width="720px" height="405px"/>
 								` + (project.video == 'none' || is_safari() ? '' : `
 								<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 								<video loop muted preload="metadata">
@@ -120,7 +120,7 @@ function projects_events()
 					<div class="other_project_content">
 						<div class="header">
 							<div class="logos">
-								<img src="${project.logo}"/>
+								<img src="${project.logo}" width="45px" height="45px"/>
 								<div class="links">
 									` + (project.links[1] == 'none' ? '' : `
 									<a class="github" href="${project.links[1]}" target="_blank">
