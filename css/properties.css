@@ -2,54 +2,63 @@
 {
 	font-family: raleway_bold;
 	src: url("../resources/fonts/raleway/Raleway-Bold.ttf");
+	font-display: swap;
 }
 
 @font-face
 {
 	font-family: raleway_semi_bold;
 	src: url("../resources/fonts/raleway/Raleway-SemiBold.ttf");
+	font-display: swap;
 }
 
 @font-face
 {
 	font-family: raleway_medium;
 	src: url("../resources/fonts/raleway/Raleway-Medium.ttf");
+	font-display: swap;
 }
 
 @font-face
 {
 	font-family: calibre_semi_bold;
 	src: url("../resources/fonts/calibre/CalibreSemibold.otf");
+	font-display: swap;
 }
 
 @font-face
 {
 	font-family: calibre_medium;
 	src: url("../resources/fonts/calibre/CalibreMedium.otf");
+	font-display: swap;
 }
 
 @font-face
 {
 	font-family: calibre_regular;
 	src: url("../resources/fonts/calibre/CalibreRegular.otf");
+	font-display: swap;
 }
 
 @font-face
 {
 	font-family: calibre_light;
 	src: url("../resources/fonts/calibre/CalibreLight.otf");
+	font-display: swap;
 }
 
 @font-face
 {
 	font-family: proxima_nova_bold;
 	src: url("../resources/fonts/proxima_nova/ProximaNovaBold.otf");
+	font-display: swap;
 }
 
 @font-face
 {
 	font-family: proxima_nova_semi_bold;
 	src: url("../resources/fonts/proxima_nova/ProximaNovaSemibold.otf");
+	font-display: swap;
 }
 
 body
