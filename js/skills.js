@@ -4,8 +4,8 @@ function skills_events()
 {
 	function events()
 	{
-		let categories = document.querySelectorAll('#skills_section .box .menu .category'),
-			skills_lists = document.querySelectorAll('#skills_section .box .box_content .skills_list');
+		let categories = document.querySelectorAll('#skills_section .box .menu .category');
+		let skills_lists = document.querySelectorAll('#skills_section .box .box_content .skills_list');
 
 		function choose(i)
 		{
@@ -43,8 +43,8 @@ function skills_events()
 
 		if (window.innerWidth > 930)
 		{
-			let menu = '',
-			 	box_content = '';
+			let menu = '';
+			let box_content = '';
 
 			menu += `<div class="selector" style="height: calc(100% / ${my_data.skills_categories.length})"></div>`;
 
