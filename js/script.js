@@ -59,4 +59,5 @@ window.onload = () =>
 	}
 
 	document.querySelector('#loading_screen').style.display = 'none';
+	window.setTimeout(() => { document.querySelector('#lcp').style.display = 'none'; }, 100);
 };
