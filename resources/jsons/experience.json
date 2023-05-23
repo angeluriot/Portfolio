@@ -15,7 +15,7 @@
 			],
 			"link": "https://fitthree.com/",
 			"video": "none",
-			"image": "resources/images/experience/Fitthree.png"
+			"image": "resources/images/experience/Fitthree.webp"
 		},
 		{
 			"date": 2019,
@@ -28,7 +28,7 @@
 			],
 			"link": "https://www.cea.fr/english",
 			"video": "none",
-			"image": "resources/images/experience/Cea.png"
+			"image": "resources/images/experience/Cea.webp"
 		},
 		{
 			"date": 2021,
@@ -41,7 +41,7 @@
 			],
 			"link": "https://www.ceesar.fr/en/",
 			"video": "none",
-			"image": "resources/images/experience/Ceesar.jpg"
+			"image": "resources/images/experience/Ceesar.webp"
 		},
 		{
 			"date": 2015,
@@ -55,7 +55,7 @@
 			],
 			"link": "https://www.youtube.com/c/DIMENSI0N",
 			"video": "resources/videos/experience/Dimension.mp4",
-			"image": "resources/images/experience/Dimension.png"
+			"image": "resources/images/experience/Dimension.webp"
 		}
 	]
 }

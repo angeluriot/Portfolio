@@ -20,8 +20,8 @@
 				"https://hexawar.io/"
 			],
 			"video": "resources/videos/projects/Hexawar_io.mp4",
-			"image": "resources/images/projects/Hexawar_io.png",
-			"logo": "resources/shapes/projects/Hexawar_io.svg",
+			"image": "resources/images/projects/Hexawar_io.webp",
+			"logo": "resources/svgs/projects/Hexawar_io.svg",
 			"categories": ["School", "Web"]
 		},
 		{
@@ -42,8 +42,8 @@
 				"https://github.com/angeluriot/Minecraft_clone/releases"
 			],
 			"video": "resources/videos/projects/Minecraft_clone.mp4",
-			"image": "resources/images/projects/Minecraft_clone.jpg",
-			"logo": "resources/shapes/projects/Minecraft_clone.svg",
+			"image": "resources/images/projects/Minecraft_clone.webp",
+			"logo": "resources/svgs/projects/Minecraft_clone.svg",
 			"categories": ["School"]
 		},
 		{
@@ -65,8 +65,8 @@
 				"https://github.com/angeluriot/Galaxy_simulation/releases"
 			],
 			"video": "resources/videos/projects/Galaxy_simulation.mp4",
-			"image": "resources/images/projects/Galaxy_simulation.png",
-			"logo": "resources/shapes/projects/Galaxy_simulation.svg",
+			"image": "resources/images/projects/Galaxy_simulation.webp",
+			"logo": "resources/svgs/projects/Galaxy_simulation.svg",
 			"categories": ["Personal", "Simulations"]
 		},
 		{
@@ -88,8 +88,8 @@
 				"https://github.com/angeluriot/2D_fractals_generator/releases"
 			],
 			"video": "resources/videos/projects/2D_fractals_generator.mp4",
-			"image": "resources/images/projects/2D_fractals_generator.png",
-			"logo": "resources/shapes/projects/2D_fractals_generator.svg",
+			"image": "resources/images/projects/2D_fractals_generator.webp",
+			"logo": "resources/svgs/projects/2D_fractals_generator.svg",
 			"categories": ["Personal"]
 		},
 		{
@@ -110,8 +110,8 @@
 				"https://github.com/angeluriot/2D_fluid_simulation/releases"
 			],
 			"video": "resources/videos/projects/2D_fluid_simulation.mp4",
-			"image": "resources/images/projects/2D_fluid_simulation.png",
-			"logo": "resources/shapes/projects/2D_fluid_simulation.svg",
+			"image": "resources/images/projects/2D_fluid_simulation.webp",
+			"logo": "resources/svgs/projects/2D_fluid_simulation.svg",
 			"categories": ["Personal", "Simulations"]
 		},
 		{
@@ -132,8 +132,8 @@
 				"https://www.angeluriot.com/maze_solver/"
 			],
 			"video": "resources/videos/projects/Maze_solver.mp4",
-			"image": "resources/images/projects/Maze_solver.png",
-			"logo": "resources/shapes/projects/Maze_solver.svg",
+			"image": "resources/images/projects/Maze_solver.webp",
+			"logo": "resources/svgs/projects/Maze_solver.svg",
 			"categories": ["Personal", "Web"]
 		},
 		{
@@ -153,8 +153,8 @@
 				"https://twitter.com/TheProverbot"
 			],
 			"video": "resources/videos/projects/Proverbot.mp4",
-			"image": "resources/images/projects/Proverbot.png",
-			"logo": "resources/shapes/projects/Proverbot.svg",
+			"image": "resources/images/projects/Proverbot.webp",
+			"logo": "resources/svgs/projects/Proverbot.svg",
 			"categories": ["Personal", "Web", "AI"]
 		},
 		{
@@ -174,8 +174,8 @@
 				"none"
 			],
 			"video": "resources/videos/projects/Obis3D.mp4",
-			"image": "resources/images/projects/Obis3D.png",
-			"logo": "resources/shapes/projects/Obis3D.svg",
+			"image": "resources/images/projects/Obis3D.webp",
+			"logo": "resources/svgs/projects/Obis3D.svg",
 			"categories": ["School"]
 		},
 		{
@@ -194,8 +194,8 @@
 				"none"
 			],
 			"video": "none",
-			"image": "resources/images/projects/Neural_network.png",
-			"logo": "resources/shapes/projects/Neural_network.svg",
+			"image": "resources/images/projects/Neural_network.webp",
+			"logo": "resources/svgs/projects/Neural_network.svg",
 			"categories": ["Personal", "AI"]
 		},
 		{
@@ -215,8 +215,8 @@
 				"https://github.com/angeluriot/Sandbox/releases"
 			],
 			"video": "resources/videos/projects/Sandbox.mp4",
-			"image": "resources/images/projects/Sandbox.png",
-			"logo": "resources/shapes/projects/Sandbox.svg",
+			"image": "resources/images/projects/Sandbox.webp",
+			"logo": "resources/svgs/projects/Sandbox.svg",
 			"categories": ["Personal", "Simulations"]
 		},
 		{
@@ -237,8 +237,8 @@
 				"https://www.angeluriot.com/"
 			],
 			"video": "resources/videos/projects/Portfolio.mp4",
-			"image": "resources/images/projects/Portfolio.png",
-			"logo": "resources/shapes/projects/Portfolio.svg",
+			"image": "resources/images/projects/Portfolio.webp",
+			"logo": "resources/svgs/projects/Portfolio.svg",
 			"categories": ["Personal", "Web"]
 		},
 		{
@@ -258,8 +258,8 @@
 				"none"
 			],
 			"video": "resources/videos/projects/Cars_AI.mp4",
-			"image": "resources/images/projects/Cars_AI.png",
-			"logo": "resources/shapes/projects/Cars_AI.svg",
+			"image": "resources/images/projects/Cars_AI.webp",
+			"logo": "resources/svgs/projects/Cars_AI.svg",
 			"categories": ["Personal", "AI"]
 		},
 		{
@@ -279,8 +279,8 @@
 				"https://github.com/angeluriot/Shell/releases"
 			],
 			"video": "resources/videos/projects/Shell.mp4",
-			"image": "resources/images/projects/Shell.png",
-			"logo": "resources/shapes/projects/Shell.svg",
+			"image": "resources/images/projects/Shell.webp",
+			"logo": "resources/svgs/projects/Shell.svg",
 			"categories": ["School"]
 		},
 		{
@@ -300,8 +300,8 @@
 				"https://github.com/angeluriot/Flappy_bird_AI/releases"
 			],
 			"video": "resources/videos/projects/Flappy_bird_AI.mp4",
-			"image": "resources/images/projects/Flappy_bird_AI.png",
-			"logo": "resources/shapes/projects/Flappy_bird_AI.svg",
+			"image": "resources/images/projects/Flappy_bird_AI.webp",
+			"logo": "resources/svgs/projects/Flappy_bird_AI.svg",
 			"categories": ["Personal", "AI"]
 		},
 		{
@@ -320,8 +320,8 @@
 				"https://github.com/angeluriot/Magic_royale/releases"
 			],
 			"video": "resources/videos/projects/Magic_royale.mp4",
-			"image": "resources/images/projects/Magic_royale.png",
-			"logo": "resources/shapes/projects/Magic_royale.svg",
+			"image": "resources/images/projects/Magic_royale.webp",
+			"logo": "resources/svgs/projects/Magic_royale.svg",
 			"categories": ["School"]
 		},
 		{
@@ -341,8 +341,8 @@
 				"none"
 			],
 			"video": "resources/videos/projects/Chess_AI.mp4",
-			"image": "resources/images/projects/Chess_AI.png",
-			"logo": "resources/shapes/projects/Chess_AI.svg",
+			"image": "resources/images/projects/Chess_AI.webp",
+			"logo": "resources/svgs/projects/Chess_AI.svg",
 			"categories": ["Personal", "AI"]
 		},
 		{
@@ -361,8 +361,8 @@
 				"none"
 			],
 			"video": "none",
-			"image": "resources/images/projects/Nuclear_reactor_simulation.png",
-			"logo": "resources/shapes/projects/Nuclear_reactor_simulation.svg",
+			"image": "resources/images/projects/Nuclear_reactor_simulation.webp",
+			"logo": "resources/svgs/projects/Nuclear_reactor_simulation.svg",
 			"categories": ["Simulations"]
 		}
 	]
