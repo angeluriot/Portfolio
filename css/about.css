@@ -83,6 +83,7 @@
 #about_section .photo img
 {
 	width: clamp(250px, 35vw, 380px);
+	height: clamp(250px, 35vw, 380px);
 	-webkit-clip-path: circle(0%);
 	clip-path: circle(0%);
 	opacity: 1;
@@ -101,6 +102,7 @@
 	#about_section .photo img
 	{
 		width: clamp(250px, 60vw, 380px);
+		height: clamp(250px, 60vw, 380px);
 	}
 }
 
