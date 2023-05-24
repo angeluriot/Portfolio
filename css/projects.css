@@ -20,11 +20,9 @@
 	-webkit-transform: translateY(70px);
 	-ms-transform: translateY(70px);
 	transform: translateY(70px);
-	-webkit-transition: opacity 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
-	transition: opacity 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
-	-o-transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-	transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-	transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+	-webkit-transition: opacity 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -webkit-filter 0.3s ease;
+	-o-transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, filter 0.3s ease;
+	transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 
 #projects_section .sort_choices
@@ -284,22 +282,19 @@
 #projects_section .project_text .text
 {
 	background-color: var(--purple);
-	-webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.4));
-	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.4));
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 15px;
 	padding: 25px 25px 25px 25px;
 	margin-bottom: 19px;
-	-webkit-transition: -webkit-filter 0.3s ease;
-	transition: -webkit-filter 0.3s ease;
-	-o-transition: filter 0.3s ease;
-	transition: filter 0.3s ease;
-	transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+	-webkit-transition: box-shadow 0.3s ease;
+	-moz-transition: box-shadow 0.3s ease;
+	-o-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
 }
 
 #projects_section .project_text .text:hover
 {
-	-webkit-filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.6));
-	filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.6));
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
 }
 
 #projects_section .project_text .text p
@@ -547,7 +542,6 @@
 		transition: -webkit-filter 0.3s ease;
 		-o-transition: filter 0.3s ease;
 		transition: filter 0.3s ease;
-		transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 	}
 
 	#projects_section .project:hover
@@ -589,16 +583,14 @@
 	#projects_section .project_text .text
 	{
 		background: none;
-		-webkit-filter: none;
-		filter: none;
+		box-shadow: none;
 		border-radius: 0px;
 		padding: 10px 0px 8px 0px;
 	}
 
 	#projects_section .project_text .text:hover
 	{
-		-webkit-filter: none;
-		filter: none;
+		box-shadow: none;
 	}
 
 	#projects_section .project_text .text p
