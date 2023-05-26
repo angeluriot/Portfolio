@@ -41,13 +41,13 @@ function home_events()
 
 	window.addEventListener('scroll', (e) =>
 	{
-		if (document.querySelector('#particles').getBoundingClientRect().bottom < 0 && !particles_paused)
+		if (pJSDom[0] && document.querySelector('#particles').getBoundingClientRect().bottom < 0 && !particles_paused)
 		{
 			pJSDom[0].pJS.particles.move.enable = false;
 			particles_paused = true;
 		}
 
-		if (document.querySelector('#particles').getBoundingClientRect().bottom >= 0 && particles_paused)
+		if (pJSDom[0] && document.querySelector('#particles').getBoundingClientRect().bottom >= 0 && particles_paused)
 		{
 			pJSDom[0].pJS.particles.move.enable = true;
 			pJSDom[0].pJS.fn.particlesRefresh();

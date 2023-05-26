@@ -3,8 +3,8 @@
 function projects_events()
 {
 	let sort_by = 'Default';
-	let done;
-	let elements;
+	let done = [];
+	let elements = [];
 
 	async function in_animation_check()
 	{

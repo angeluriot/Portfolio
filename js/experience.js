@@ -2,8 +2,8 @@
 
 function experience_events()
 {
-	let done;
-	let elements;
+	let done = [];
+	let elements = [];
 
 	async function in_animation_check()
 	{
