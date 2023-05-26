@@ -37,7 +37,7 @@ function experience_events()
 		if (window.innerWidth > 780)
 		{
 			document.querySelector('#experience_section .experience_content').innerHTML += `
-				<div class="in_animation job ${inverted ? 'inverted' : ''} ${is_safari() ? 'safari_fix' : ''}">
+				<div class="in_animation job ${inverted ? 'inverted' : ''}">
 					<div class="job_text">
 						<div class="type">
 							<span>${job.date}</span>
@@ -65,7 +65,7 @@ function experience_events()
 		else
 		{
 			document.querySelector('#experience_section .experience_content').innerHTML += `
-				<div class="in_animation job" style="background-image: url(${job.image});">
+				<div class="in_animation job ${is_safari() ? 'safari_fix' : ''}" style="background-image: url(${job.image});">
 					<div class="job_text"">
 						<div class="type">
 							<span>${job.type}</span>

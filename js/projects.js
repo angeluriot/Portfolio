@@ -43,7 +43,7 @@ function projects_events()
 			if (window.innerWidth > 780)
 			{
 				document.querySelector('#projects_section .projects_content').innerHTML += `
-					<div class="in_animation project ${inverted ? 'inverted' : ''} ${is_safari() ? 'safari_fix' : ''}">
+					<div class="in_animation project ${inverted ? 'inverted' : ''}">
 						<div class="project_text">
 							<div class="type">
 								<span>${project.date}</span>
@@ -83,7 +83,7 @@ function projects_events()
 			else
 			{
 				document.querySelector('#projects_section .projects_content').innerHTML += `
-					<div class="in_animation project" style="background-image: url(${project.image});">
+					<div class="in_animation project ${is_safari() ? 'safari_fix' : ''}" style="background-image: url(${project.image});">
 						<div class="project_text"">
 							<div class="type">
 								<span>${project.type}</span>

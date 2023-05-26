@@ -428,16 +428,6 @@
 
 @media screen and (max-width: 780px)
 {
-	#projects_section .safari_fix
-	{
-		filter: none !important;
-	}
-
-	#projects_section .safari_fix:hover
-	{
-		filter: none !important;
-	}
-
 	#projects_section .project
 	{
 		background-size: cover;
