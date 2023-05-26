@@ -427,6 +427,16 @@
 
 @media screen and (max-width: 780px)
 {
+	.safari_fix
+	{
+		filter: none !important;
+	}
+
+	.safari_fix:hover
+	{
+		filter: none !important;
+	}
+
 	#experience_section .job
 	{
 		background-size: cover;
