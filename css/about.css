@@ -50,6 +50,8 @@
 
 #about_section .photo
 {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
 	width: fit-content;
 	display: flex;
 	justify-content: center;
@@ -61,10 +63,11 @@
 {
 	width: clamp(250px, 35vw, 380px);
 	height: clamp(250px, 35vw, 380px);
+	-webkit-clip-path: circle(0%);
 	clip-path: circle(0%);
 	opacity: 1;
 	transform: translateY(0px);
-	transition: clip-path 1s ease-in-out;
+	transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
 }
 
 @media screen and (max-width: 800px)

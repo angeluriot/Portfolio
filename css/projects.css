@@ -377,23 +377,40 @@
 	margin: 12px;
 	border: 12px solid #fff;
 	border-radius: 50%;
+	-webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 	border-color: #fff transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1)
 {
+	-webkit-animation-delay: -0.45s;
 	animation-delay: -0.45s;
 }
 
 .lds-ring div:nth-child(2)
 {
+	-webkit-animation-delay: -0.3s;
 	animation-delay: -0.3s;
 }
 
 .lds-ring div:nth-child(3)
 {
+	-webkit-animation-delay: -0.15s;
 	animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+
+	100%
+	{
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes lds-ring

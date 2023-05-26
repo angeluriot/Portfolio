@@ -75,6 +75,8 @@
 	padding: 50px 60px 50px 60px;
 }
 
+@-webkit-keyframes enter_anim { from { transform: translateY(25px); opacity: 0; } to { transform: translateY(0px); opacity: 1; } }
+
 @keyframes enter_anim { from { transform: translateY(25px); opacity: 0; } to { transform: translateY(0px); opacity: 1; } }
 
 #skills_section .box .box_content .skills_list
@@ -87,6 +89,7 @@
 	grid-gap: 50px;
 	opacity: 0;
 	transform: translateY(25px);
+	-webkit-animation: enter_anim 0.5s ease 1 forwards;
 	animation: enter_anim 0.5s ease 1 forwards;
 }
 
