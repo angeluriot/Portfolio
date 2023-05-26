@@ -106,7 +106,8 @@
 
 #skills_section .box .box_content .skills_list .skill img
 {
-	width: 95%;
+	width: 95px;
+	height: 95px;
 	transform: scale(0.88);
 	transition: transform 0.3s ease-in-out;
 }
