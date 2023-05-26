@@ -55,7 +55,7 @@ function skills_events()
 				for (let skill of category.skills)
 				{
 					skills += `<a class="skill" href="${skill.link}" target="_blank">
-						<img src="${skill.logo}" alt="${skill.name.toLowerCase()}" width="95px" height="95px"/>
+						<img src="${skill.logo}" alt="${skill.name.toLowerCase()}" width="190px" height="190px"/>
 						<span>${skill.name}</span>
 					</a>`;
 				}
@@ -79,7 +79,7 @@ function skills_events()
 				for (let skill of category.skills)
 				{
 					skills += `<a class="skill" href="${skill.link}" target="_blank">
-						<img src="${skill.logo}" alt="${skill.name.toLowerCase()}" width="95px" height="95px"/>
+						<img src="${skill.logo}" alt="${skill.name.toLowerCase()}" width="190px" height="190px"/>
 						<span>${skill.name}</span>
 					</a>`;
 				}

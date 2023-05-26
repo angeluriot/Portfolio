@@ -68,7 +68,7 @@ function projects_events()
 						</div>
 						<div class="project_view">
 							<a ${is_safari() ? 'class="safari_fix"' : ''} href="${project.links[0]}" target="_blank">
-								<img src="${project.image}" alt="${project.title.toLowerCase()} image" width="720px" height="405px"/>
+								<img src="${project.image}" alt="${project.title.toLowerCase()} image" width="1440px" height="810px"/>
 								` + (project.video == 'none' || is_safari() ? '' : `
 								<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 								<video loop muted preload="metadata">
