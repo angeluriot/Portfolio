@@ -427,12 +427,12 @@
 
 @media screen and (max-width: 780px)
 {
-	.safari_fix
+	#experience_section .safari_fix
 	{
 		filter: none !important;
 	}
 
-	.safari_fix:hover
+	#experience_section .safari_fix:hover
 	{
 		filter: none !important;
 	}
