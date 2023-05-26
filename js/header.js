@@ -86,12 +86,7 @@ function header_events()
 			document.querySelector('#header_div').style.height = '70px';
 			document.querySelector('#header_div').style.boxShadow = '0px 5px 30px rgba(0, 0, 0, 0.7)';
 			document.querySelector('#header_div').style.pointerEvents = 'all';
-
-			if (navigator.userAgent.indexOf("Firefox") > 0)
-				document.querySelector('#header').style.backgroundColor = 'var(--dark_blue)';
-			else
-				document.querySelector('#header').style.backgroundColor = 'var(--fade_dark_blue)';
-
+			document.querySelector('#header').style.backgroundColor = 'var(--fade_dark_blue)';
 			document.querySelector('#header').style.backdropFilter = 'blur(8px)';
 			document.querySelector('#header').style.webkitBackdropFilter = 'blur(8px)';
 			header_detached = true;

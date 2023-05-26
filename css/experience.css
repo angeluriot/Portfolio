@@ -17,26 +17,15 @@
 #experience_section .job.in_animation
 {
 	opacity: 0;
-	-webkit-transform: translateY(70px);
-	-ms-transform: translateY(70px);
 	transform: translateY(70px);
-	-webkit-transition: opacity 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -webkit-filter 0.3s ease;
-	-o-transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, filter 0.3s ease;
-	transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, filter 0.3s ease, -webkit-filter 0.3s ease;
+	transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, filter 0.3s ease;
 }
 
 #experience_section .sort_choices
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	width: 100%;
 	margin-bottom: 70px;
@@ -59,8 +48,6 @@
 	border-radius: 100px;
 	padding: 9px 18px 9px 18px;
 	border: 2px solid var(--light_blue);
-	-webkit-transition: background-color 0.2s ease-in-out;
-	-o-transition: background-color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out;
 }
 
@@ -84,18 +71,9 @@
 
 #experience_section .experience_content
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	width: 100%;
 	gap: clamp(20px, 7vw, 100px);
@@ -119,14 +97,8 @@
 
 #experience_section .job
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	padding-left: 0px;
 	padding-right: clamp(0px, calc(18vw - 234px), 60px);
@@ -134,9 +106,6 @@
 
 #experience_section .job.inverted
 {
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: reverse;
-	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
 	padding-left: clamp(0px, calc(18vw - 234px), 60px);
 	padding-right: 0px;
@@ -145,43 +114,25 @@
 #experience_section .job_view
 {
 	z-index: 5;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 
 #experience_section .job_view a
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	width: calc(clamp(400px, 40vw, 600px) * 1.05);
 	overflow: hidden;
-	-webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 	border-radius: 15px;
-	-webkit-transition: -webkit-filter 0.3s ease;
-	transition: -webkit-filter 0.3s ease;
-	-o-transition: filter 0.3s ease;
 	transition: filter 0.3s ease;
-	transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 
 #experience_section .job_view a:hover
 {
-	-webkit-filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7));
 	filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7));
 }
 
@@ -202,26 +153,15 @@
 {
 	z-index: 10;
 	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-start;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	margin-right: -100px;
 }
 
 #experience_section .inverted .job_text
 {
-	-webkit-box-align: end;
-	-ms-flex-align: end;
 	align-items: flex-end;
 	margin-left: -100px;
 	margin-right: 0px;
@@ -229,11 +169,8 @@
 
 #experience_section .job_text .type
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	gap: 7px;
 	font-family: raleway_medium;
@@ -248,9 +185,6 @@
 {
 	margin-left: 0px;
 	margin-right: 15px;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: reverse;
-	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
 }
 
@@ -262,8 +196,6 @@
 	text-decoration: none;
 	margin-bottom: 12px;
 	margin-left: 15px;
-	-webkit-transition: color 0.2s ease;
-	-o-transition: color 0.2s ease;
 	transition: color 0.2s ease;
 }
 
@@ -285,9 +217,6 @@
 	border-radius: 15px;
 	padding: 25px 25px 25px 25px;
 	margin-bottom: 19px;
-	-webkit-transition: box-shadow 0.3s ease;
-	-moz-transition: box-shadow 0.3s ease;
-	-o-transition: box-shadow 0.3s ease;
 	transition: box-shadow 0.3s ease;
 }
 
@@ -311,16 +240,9 @@
 
 #experience_section .job_text .tags
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
 	justify-content: flex-start;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	width: 100%;
 	margin-bottom: 17px;
@@ -330,8 +252,6 @@
 
 #experience_section .inverted .job_text .tags
 {
-	-webkit-box-pack: end;
-	-ms-flex-pack: end;
 	justify-content: flex-end;
 	margin-left: 0px;
 	margin-right: 9px;
@@ -346,8 +266,6 @@
 	opacity: 1;
 	padding: 3px 6px 3px 6px;
 	white-space: nowrap;
-	-webkit-transition: opacity 0.2s ease;
-	-o-transition: opacity 0.2s ease;
 	transition: opacity 0.2s ease;
 }
 
@@ -358,14 +276,8 @@
 
 #experience_section .job_text .links
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: end;
-	-ms-flex-pack: end;
 	justify-content: flex-end;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	margin-left: 15px;
 	gap: 20px;
@@ -396,8 +308,6 @@
 	stroke-linejoin: round;
 	stroke: var(--color);
 	opacity: 1;
-	-webkit-transition: opacity 0.2s ease;
-	-o-transition: opacity 0.2s ease;
 	transition: opacity 0.2s ease;
 }
 
@@ -408,14 +318,8 @@
 
 #experience_section .job_text .links a
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -433,8 +337,6 @@
 	font-size: 15px;
 	border-radius: 20px;
 	opacity: 0;
-	-webkit-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
 }
 
@@ -466,7 +368,6 @@
 
 .lds-ring div
 {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	display: block;
 	position: absolute;
@@ -475,55 +376,34 @@
 	margin: 12px;
 	border: 12px solid #fff;
 	border-radius: 50%;
-	-webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 	border-color: #fff transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1)
 {
-	-webkit-animation-delay: -0.45s;
 	animation-delay: -0.45s;
 }
 
 .lds-ring div:nth-child(2)
 {
-	-webkit-animation-delay: -0.3s;
 	animation-delay: -0.3s;
 }
 
 .lds-ring div:nth-child(3)
 {
-	-webkit-animation-delay: -0.15s;
 	animation-delay: -0.15s;
-}
-
-@-webkit-keyframes lds-ring
-{
-	0%
-	{
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-
-	100%
-	{
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
 }
 
 @keyframes lds-ring
 {
 	0%
 	{
-		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
 
 	100%
 	{
-		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
 }
@@ -535,24 +415,17 @@
 		background-size: cover;
 		background-position: center;
 		border-radius: 15px;
-		-webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 		filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
-		-webkit-transition: -webkit-filter 0.3s ease;
-		transition: -webkit-filter 0.3s ease;
-		-o-transition: filter 0.3s ease;
 		transition: filter 0.3s ease;
 	}
 
 	#experience_section .job:hover
 	{
-		-webkit-filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7));
 		filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7));
 	}
 
 	#experience_section .job_text
 	{
-		-webkit-box-align: start;
-		-ms-flex-align: start;
 		align-items: flex-start;
 		margin-left: 0px;
 		margin-right: 0px;

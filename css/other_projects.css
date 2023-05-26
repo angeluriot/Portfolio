@@ -1,12 +1,7 @@
 #projects_section .other_projects_content
 {
-	display: -ms-grid;
 	display: grid;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	width: 100%;
 	gap: 20px 20px;
@@ -23,54 +18,33 @@
 
 #projects_section .other_project
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	height: 100%;
 	background-color: var(--purple);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
-	-webkit-transition: opacity 0.5s ease-in-out, box-shadow 0.4s ease, -webkit-transform 0.4s ease !important;
-	-o-transition: opacity 0.5s ease-in-out, box-shadow 0.4s ease, transform 0.4s ease !important;
-	transition: opacity 0.5s ease-in-out, box-shadow 0.4s ease, transform 0.4s ease, -webkit-transform 0.4s ease !important;
+	transition: opacity 0.5s ease-in-out, box-shadow 0.4s ease, transform 0.4s ease !important;
 }
 
 #projects_section .other_project:hover
 {
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-	-webkit-transform: translate(0px, -10px) !important;
-	-ms-transform: translate(0px, -10px) !important;
 	transform: translate(0px, -10px) !important;
 }
 
 #projects_section .other_project.in_animation
 {
 	opacity: 0;
-	-webkit-transform: translateY(40px);
-	-ms-transform: translateY(40px);
 	transform: translateY(40px);
 }
 
 #projects_section .other_project_content
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-start;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	height: calc(100% - 80px);
 	padding: 40px 35px 40px 35px;
@@ -86,44 +60,23 @@
 
 #projects_section .other_project .other_project_link
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 
 #projects_section .other_project .header
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-start;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
 #projects_section .other_project .logos
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	width: 100%;
 	margin-bottom: 40px;
@@ -136,28 +89,16 @@
 
 #projects_section .other_project .logos .links
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	gap: 20px;
 }
 
 #projects_section .other_project .logos .links a
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -171,8 +112,6 @@
 	stroke-linejoin: round;
 	stroke: var(--fade_white);
 	opacity: 0.8;
-	-webkit-transition: stroke 0.2s ease, opacity 0.2s ease;
-	-o-transition: stroke 0.2s ease, opacity 0.2s ease;
 	transition: stroke 0.2s ease, opacity 0.2s ease;
 }
 
@@ -195,8 +134,6 @@
 	color: var(--white);
 	text-decoration: none;
 	margin-bottom: 12px;
-	-webkit-transition: color 0.2s ease;
-	-o-transition: color 0.2s ease;
 	transition: color 0.2s ease;
 }
 
@@ -228,16 +165,9 @@
 
 #projects_section .other_project .tags
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
 	justify-content: flex-start;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	width: 100%;
 	gap: 15px;

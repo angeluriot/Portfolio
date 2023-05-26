@@ -37,7 +37,7 @@ function experience_events()
 		if (window.innerWidth > 780)
 		{
 			document.querySelector('#experience_section .experience_content').innerHTML += `
-				<div class="in_animation job ${inverted ? 'inverted' : ''}">
+				<div class="in_animation job ${inverted ? 'inverted' : ''} ${is_safari() ? 'safari_fix' : ''}">
 					<div class="job_text">
 						<div class="type">
 							<span>${job.date}</span>
@@ -49,7 +49,7 @@ function experience_events()
 						<div class="tags">` + tags + `</div>
 					</div>
 					<div class="job_view">
-						<a href="${job.link}" target="_blank">
+						<a ${is_safari() ? 'class="safari_fix"' : ''} href="${job.link}" target="_blank">
 							<img src="${job.image}" width="720px" height="405px"/>
 							` + (job.video == 'none' || is_safari() ? '' : `
 							<div class="lds-ring"><div></div><div></div><div></div><div></div></div>

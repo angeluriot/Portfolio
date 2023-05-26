@@ -5,7 +5,6 @@
 	height: 100vh;
 	width: 100vw;
 	max-width: 100%;
-	background: -o-radial-gradient(bottom, ellipse, #0b1829 0%, #000000 100%);
 	background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
 }
 
@@ -18,15 +17,12 @@
 	width: 100%;
 	height: 100%;
 	pointer-events: all;
-	-webkit-mask-image: linear-gradient(to bottom, transparent 50px, black 200px);
 	mask-image: linear-gradient(to bottom, transparent 50px, black 200px);
 }
 
 #home_section .content
 {
 	pointer-events: none;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-start;
 }
 

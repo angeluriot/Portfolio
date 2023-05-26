@@ -13,9 +13,7 @@ function skills_events()
 			skill_selector.style.top = (100 / categories.length) * i + '%';
 
 			for (let j = 0; j < categories.length; j++)
-			{
 				categories[j].style.cursor = 'pointer';
-			}
 
 			categories[i].style.cursor = 'default';
 

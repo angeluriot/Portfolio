@@ -43,7 +43,7 @@ function projects_events()
 			if (window.innerWidth > 780)
 			{
 				document.querySelector('#projects_section .projects_content').innerHTML += `
-					<div class="in_animation project ${inverted ? 'inverted' : ''}">
+					<div class="in_animation project ${inverted ? 'inverted' : ''} ${is_safari() ? 'safari_fix' : ''}">
 						<div class="project_text">
 							<div class="type">
 								<span>${project.date}</span>
@@ -67,7 +67,7 @@ function projects_events()
 							</div>
 						</div>
 						<div class="project_view">
-							<a href="${project.links[0]}" target="_blank">
+							<a ${is_safari() ? 'class="safari_fix"' : ''} href="${project.links[0]}" target="_blank">
 								<img src="${project.image}" width="720px" height="405px"/>
 								` + (project.video == 'none' || is_safari() ? '' : `
 								<div class="lds-ring"><div></div><div></div><div></div><div></div></div>

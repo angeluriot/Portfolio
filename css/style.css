@@ -14,6 +14,7 @@ html
 body
 {
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
 	position: relative;
 	width: 100%;
@@ -78,44 +79,24 @@ ol
 
 #main
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
 .section
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 
 .content
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 	width: 100%;
 	z-index: 10;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	padding: 0px 200px;
 	max-width: 1200px;
@@ -139,8 +120,6 @@ ol
 	height: 8vw;
 	width: 100%;
 	margin: -4vw 0px -4vw 0px;
-	-webkit-transform: rotate(-4deg) scale(1.2, 1);
-	-ms-transform: rotate(-4deg) scale(1.2, 1);
 	transform: rotate(-4deg) scale(1.2, 1);
 }
 
@@ -167,33 +146,19 @@ ol
 	top: 75%;
 	left: 0;
 	background-color: var(--light_blue);
-	-webkit-transform: scaleX(0);
-	-ms-transform: scaleX(0);
 	transform: scaleX(0);
-	-webkit-transition: -webkit-transform 0.3s ease;
-	transition: -webkit-transform 0.3s ease;
-	-o-transition: transform 0.3s ease;
 	transition: transform 0.3s ease;
-	transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .link:hover::before
 {
-	-webkit-transform: scaleX(0.999);
-	-ms-transform: scaleX(0.999);
 	transform: scaleX(0.999);
 }
 
 .button
 {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	pointer-events: all;
 	border: 2px solid var(--light_blue);
@@ -204,8 +169,6 @@ ol
 	color: var(--light_blue);
 	text-decoration: none;
 	background-color: none;
-	-webkit-transition: background-color 0.3s ease;
-	-o-transition: background-color 0.3s ease;
 	transition: background-color 0.3s ease;
 }
 
@@ -227,8 +190,6 @@ ol
 
 .button .button_arrow .path_1, .button .button_arrow .path_2
 {
-	-webkit-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 
@@ -247,14 +208,8 @@ ol
 .in_animation
 {
 	opacity: 0;
-	-webkit-transform: translateY(30px);
-	-ms-transform: translateY(30px);
 	transform: translateY(30px);
-	-webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-	-o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .section_title
@@ -263,4 +218,14 @@ ol
 	font-size: 40px;
 	margin-bottom: 70px;
 	text-align: center;
+}
+
+.safari_fix
+{
+	filter: none !important;
+}
+
+.safari_fix:hover
+{
+	filter: none !important;
 }

@@ -12,7 +12,7 @@ A website presenting my projects.
 <br/>
 
 <p align="center">
-	<img src="https://github.com/angeluriot/Portfolio/blob/master/resources/images/Social.webp" width="700">
+	<img src="./resources/misc/Thumbnail.png" width="700">
 </p>
 
 <br/>
