@@ -2,6 +2,27 @@
 	"projects":
 	[
 		{
+			"date": 2023,
+			"type": "Personal Project",
+			"title": "Generative Adversarial Network",
+			"description": "This project is a deep convolutional generative adversarial network that can create high quality images from a random seed like portraits, animals, drawings and more...",
+			"tags":
+			[
+				{ "name": "Python", "url": "https://www.python.org/" },
+				{ "name": "PyTorch", "url": "https://pytorch.org/" }
+			],
+			"links":
+			[
+				"https://github.com/angeluriot/Generative_adversarial_network",
+				"https://github.com/angeluriot/Generative_adversarial_network",
+				"https://github.com/angeluriot/Generative_adversarial_network"
+			],
+			"video": "resources/videos/projects/Generative_adversarial_network.mp4",
+			"image": "resources/images/projects/Generative_adversarial_network.webp",
+			"logo": "resources/svgs/projects/Generative_adversarial_network.svg",
+			"categories": ["Personal", "AI"]
+		},
+		{
 			"date": 2021,
 			"type": "School Project",
 			"title": "Hexawar.io",
@@ -156,6 +177,26 @@
 			"image": "resources/images/projects/Proverbot.webp",
 			"logo": "resources/svgs/projects/Proverbot.svg",
 			"categories": ["Personal", "Web", "AI"]
+		},
+		{
+			"date": 2023,
+			"type": "School Project",
+			"title": "Ray tracer",
+			"description": "This project is a ray tracer made in C++ on the CPU that can render complex 3D scenes with custom models and textures, reflexions and refractions, shadows, and more...",
+			"tags":
+			[
+				{ "name": "C++", "url": "https://en.wikipedia.org/wiki/C%2B%2B" }
+			],
+			"links":
+			[
+				"https://github.com/angeluriot/Ray_tracer",
+				"https://github.com/angeluriot/Ray_tracer",
+				"https://github.com/angeluriot/Ray_tracer/releases"
+			],
+			"video": "none",
+			"image": "resources/images/projects/Ray_tracer.webp",
+			"logo": "resources/svgs/projects/Ray_tracer.svg",
+			"categories": ["School", "Simulations"]
 		},
 		{
 			"date": 2021,
