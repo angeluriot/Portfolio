@@ -36,6 +36,16 @@
 					"link": "https://ocaml.org/index.html"
 				},
 				{
+					"name": "JavaFX",
+					"logo": "resources/svgs/skills/JavaFX.svg",
+					"link": "https://openjfx.io"
+				},
+				{
+					"name": "WinForms",
+					"logo": "resources/images/skills/WinForms.webp",
+					"link": "https://learn.microsoft.com/en-us/dotnet/desktop/winforms/"
+				},
+				{
 					"name": "OpenCL",
 					"logo": "resources/svgs/skills/OpenCL.svg",
 					"link": "https://www.khronos.org/opencl/"
@@ -82,6 +92,11 @@
 					"link": "https://openjfx.io"
 				},
 				{
+					"name": "WinForms",
+					"logo": "resources/images/skills/WinForms.webp",
+					"link": "https://learn.microsoft.com/en-us/dotnet/desktop/winforms/"
+				},
+				{
 					"name": "SFML",
 					"logo": "resources/svgs/skills/Sfml.svg",
 					"link": "https://www.sfml-dev.org/index.php"
@@ -95,6 +110,82 @@
 					"name": "GLM",
 					"logo": "resources/svgs/skills/Glm.svg",
 					"link": "https://glm.g-truc.net/0.9.9/"
+				}
+			]
+		},
+		{
+			"name" : "Back-end Web",
+			"skills" :
+			[
+				{
+					"name": "Python",
+					"logo": "resources/svgs/skills/Python.svg",
+					"link": "https://www.python.org/"
+				},
+				{
+					"name": "Flask",
+					"logo": "resources/svgs/skills/Flask.svg",
+					"link": "https://flask.palletsprojects.com/"
+				},
+				{
+					"name": "Ruby",
+					"logo": "resources/svgs/skills/Ruby.svg",
+					"link": "https://www.ruby-lang.org/"
+				},
+				{
+					"name": "Rails",
+					"logo": "resources/svgs/skills/Rails.svg",
+					"link": "https://rubyonrails.org/"
+				},
+				{
+					"name": "JavaScript",
+					"logo": "resources/svgs/skills/JavaScript.svg",
+					"link": "https://en.wikipedia.org/wiki/JavaScript"
+				},
+				{
+					"name": "TypeScript",
+					"logo": "resources/svgs/skills/TypeScript.svg",
+					"link": "https://www.typescriptlang.org"
+				},
+				{
+					"name": "NodeJS",
+					"logo": "resources/svgs/skills/NodeJS.svg",
+					"link": "https://nodejs.org/en/"
+				},
+				{
+					"name": "ExpressJS",
+					"logo": "resources/images/skills/ExpressJS.webp",
+					"link": "http://expressjs.com"
+				},
+				{
+					"name": "C#",
+					"logo": "resources/svgs/skills/C_sharp.svg",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+				},
+				{
+					"name": "Socket.io",
+					"logo": "resources/svgs/skills/Socket_io.svg",
+					"link": "https://socket.io"
+				},
+				{
+					"name": "SQL",
+					"logo": "resources/svgs/skills/Sql.svg",
+					"link": "https://sql.sh"
+				},
+				{
+					"name": "MongoDB",
+					"logo": "resources/svgs/skills/MongoDB.svg",
+					"link": "https://www.mongodb.com"
+				},
+				{
+					"name": "Stripe",
+					"logo": "resources/svgs/skills/Stripe.svg",
+					"link": "https://stripe.com/"
+				},
+				{
+					"name": "Git",
+					"logo": "resources/svgs/skills/Git.svg",
+					"link": "https://git-scm.com/"
 				}
 			]
 		},
@@ -170,58 +261,33 @@
 			]
 		},
 		{
-			"name" : "Back-end Web",
+			"name" : "Machine Learning",
 			"skills" :
 			[
 				{
-					"name": "JavaScript",
-					"logo": "resources/svgs/skills/JavaScript.svg",
-					"link": "https://en.wikipedia.org/wiki/JavaScript"
+					"name": "Theory",
+					"logo": "resources/svgs/skills/Theory.svg",
+					"link": "https://github.com/angeluriot/Neural_network"
 				},
 				{
-					"name": "TypeScript",
-					"logo": "resources/svgs/skills/TypeScript.svg",
-					"link": "https://www.typescriptlang.org"
+					"name": "Python",
+					"logo": "resources/svgs/skills/Python.svg",
+					"link": "https://www.python.org/"
 				},
 				{
-					"name": "NodeJS",
-					"logo": "resources/svgs/skills/NodeJS.svg",
-					"link": "https://nodejs.org/en/"
+					"name": "PyTorch",
+					"logo": "resources/svgs/skills/PyTorch.svg",
+					"link": "https://pytorch.org/"
 				},
 				{
-					"name": "ExpressJS",
-					"logo": "resources/images/skills/ExpressJS.webp",
-					"link": "http://expressjs.com"
+					"name": "Tensorflow",
+					"logo": "resources/svgs/skills/Tensorflow.svg",
+					"link": "https://www.tensorflow.org/"
 				},
 				{
-					"name": "C#",
-					"logo": "resources/svgs/skills/C_sharp.svg",
-					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-				},
-				{
-					"name": "Socket.io",
-					"logo": "resources/svgs/skills/Socket_io.svg",
-					"link": "https://socket.io"
-				},
-				{
-					"name": "SQL",
-					"logo": "resources/svgs/skills/Sql.svg",
-					"link": "https://sql.sh"
-				},
-				{
-					"name": "MongoDB",
-					"logo": "resources/svgs/skills/MongoDB.svg",
-					"link": "https://www.mongodb.com"
-				},
-				{
-					"name": "Stripe",
-					"logo": "resources/svgs/skills/Stripe.svg",
-					"link": "https://stripe.com/"
-				},
-				{
-					"name": "Git",
-					"logo": "resources/svgs/skills/Git.svg",
-					"link": "https://git-scm.com/"
+					"name": "Keras",
+					"logo": "resources/svgs/skills/Keras.svg",
+					"link": "https://keras.io/"
 				}
 			]
 		},
@@ -253,27 +319,6 @@
 					"name": "SolidWorks",
 					"logo": "resources/images/skills/SolidWorks.webp",
 					"link": "https://www.solidworks.com/"
-				}
-			]
-		},
-		{
-			"name" : "Machine Learning",
-			"skills" :
-			[
-				{
-					"name": "Theory",
-					"logo": "resources/svgs/skills/Theory.svg",
-					"link": "https://github.com/angeluriot/Neural_network"
-				},
-				{
-					"name": "Tensorflow",
-					"logo": "resources/svgs/skills/Tensorflow.svg",
-					"link": "https://www.tensorflow.org/"
-				},
-				{
-					"name": "Keras",
-					"logo": "resources/svgs/skills/Keras.svg",
-					"link": "https://keras.io/"
 				}
 			]
 		},
