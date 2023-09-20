@@ -3,7 +3,24 @@
 	[
 		{
 			"date": 2023,
-			"type": "Backend Engineer Intern",
+			"type": "Software Engineer",
+			"title": "BlaBlaCar",
+			"description": "Backend development for BlaBlaCar Daily, a dedicated app for short-distance carpooling within the BlaBlaCar ecosystem. My role involves resolving bugs and implementing new features to enhance user experience.",
+			"tags":
+			[
+				{ "name": "Python", "url": "https://www.python.org/" },
+				{ "name": "Flask", "url": "https://flask.palletsprojects.com/" },
+				{ "name": "Ruby", "url": "https://www.ruby-lang.org/" },
+				{ "name": "Rails", "url": "https://rubyonrails.org/" },
+				{ "name": "SQL", "url": "https://sql.sh" }
+			],
+			"link": "https://www.blablacar.co.uk/",
+			"video": "resources/videos/experience/BlaBlaCar.mp4",
+			"image": "resources/images/experience/BlaBlaCar.webp"
+		},
+		{
+			"date": 2023,
+			"type": "Software Engineer Intern",
 			"title": "Klaxit",
 			"description": "Backend development for the Klaxit application (new feature implementation and bug fixes). Additionally, I developed a machine learning model to detect fraudulent activity (data collection, training, automation, and deployment).",
 			"tags":
