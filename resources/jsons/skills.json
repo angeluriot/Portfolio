@@ -280,8 +280,8 @@
 					"link": "https://pytorch.org/"
 				},
 				{
-					"name": "Tensorflow",
-					"logo": "resources/svgs/skills/Tensorflow.svg",
+					"name": "TensorFlow",
+					"logo": "resources/svgs/skills/TensorFlow.svg",
 					"link": "https://www.tensorflow.org/"
 				},
 				{

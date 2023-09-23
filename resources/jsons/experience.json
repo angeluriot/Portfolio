@@ -29,7 +29,7 @@
 				{ "name": "Rails", "url": "https://rubyonrails.org/" },
 				{ "name": "SQL", "url": "https://sql.sh" },
 				{ "name": "Python", "url": "https://www.python.org/" },
-				{ "name": "Tensorflow", "url": "https://www.tensorflow.org/" }
+				{ "name": "TensorFlow", "url": "https://www.tensorflow.org/" }
 			],
 			"link": "https://www.klaxit.com/",
 			"video": "none",
