@@ -15,7 +15,7 @@
 			[
 				"https://github.com/angeluriot/Language_model",
 				"https://github.com/angeluriot/Language_model",
-				"https://github.com/angeluriot/Language_model"
+				"none"
 			],
 			"video": "resources/videos/projects/Language_model.mp4",
 			"image": "resources/images/projects/Language_model.webp",
@@ -36,7 +36,7 @@
 			[
 				"https://github.com/angeluriot/Generative_adversarial_network",
 				"https://github.com/angeluriot/Generative_adversarial_network",
-				"https://github.com/angeluriot/Generative_adversarial_network"
+				"none"
 			],
 			"video": "resources/videos/projects/Generative_adversarial_network.mp4",
 			"image": "resources/images/projects/Generative_adversarial_network.webp",
