@@ -1,4 +1,4 @@
-# Portfolio
+# 🌐 Portfolio
 
 ![Release](https://img.shields.io/badge/Release-2.0-blueviolet)
 ![Language](https://img.shields.io/badge/Language-JavaScript-ffcc14)
@@ -17,12 +17,12 @@ A website presenting my projects.
 
 <br/>
 
-# Access
+# 📍 Access
 
 * The website is online at the address : **[angeluriot.com](https://www.angeluriot.com/)**.
 
 <br/>
 
-# Credits
+# 🙏 Credits
 
 * [**Angel Uriot**](https://github.com/angeluriot) : Creator of the project.
