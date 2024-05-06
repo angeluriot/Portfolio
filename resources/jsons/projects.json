@@ -2,6 +2,27 @@
 	"projects":
 	[
 		{
+			"date": 2024,
+			"type": "Personal Project",
+			"title": "Language model",
+			"description": "This project is an autoregressive language model like ChatGPT, after training on 200GB of french text during 570 hours, it is able to answer questions, follow instructions, generate stories, and more...",
+			"tags":
+			[
+				{ "name": "Python", "url": "https://www.python.org/" },
+				{ "name": "PyTorch", "url": "https://pytorch.org/" }
+			],
+			"links":
+			[
+				"https://github.com/angeluriot/Language_model",
+				"https://github.com/angeluriot/Language_model",
+				"https://github.com/angeluriot/Language_model"
+			],
+			"video": "resources/videos/projects/Language_model.mp4",
+			"image": "resources/images/projects/Language_model.webp",
+			"logo": "resources/svgs/projects/Language_model.svg",
+			"categories": ["Personal", "AI"]
+		},
+		{
 			"date": 2023,
 			"type": "Personal Project",
 			"title": "Generative Adversarial Network",
@@ -397,7 +418,7 @@
 			],
 			"links":
 			[
-				"https://www.angeluriot.com/portfolio/resources/documents/CEA_2019.pdf",
+				"https://www.cea.fr/energies/iresne/Pages/Nos%20prestations/Mod%C3%A9lisation%20et%20Simulation.aspx",
 				"none",
 				"none"
 			],
