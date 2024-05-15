@@ -367,7 +367,7 @@
 			"categories": ["Personal", "AI"]
 		},
 		{
-			"date": 2021,
+			"date": 2022,
 			"type": "School Project",
 			"title": "Magic Royale",
 			"description": "It's a simplified clone of Magic the Gathering Arena but with the cards of Clash Royale, it implements the basic mechanics of the game with a display in the console (no external libraries were allowed)...",
