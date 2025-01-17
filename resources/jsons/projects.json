@@ -135,6 +135,28 @@
 			"categories": ["Personal"]
 		},
 		{
+			"date": 2021,
+			"type": "Personal Project",
+			"title": "Chess AI",
+			"description": "This project is a machine learning model that has learned to play chess after training on millions of chess games, achieving an elo rating of 1,741...",
+			"tags":
+			[
+				{ "name": "Python", "url": "https://www.python.org/" },
+				{ "name": "PyTorch", "url": "https://pytorch.org/" },
+				{ "name": "Stockfish", "url": "https://stockfishchess.org/" }
+			],
+			"links":
+			[
+				"https://github.com/angeluriot/Chess_AI",
+				"https://github.com/angeluriot/Chess_AI",
+				"none"
+			],
+			"video": "none",
+			"image": "resources/images/projects/Chess_AI.webp",
+			"logo": "resources/svgs/projects/Chess_AI.svg",
+			"categories": ["Personal", "AI"]
+		},
+		{
 			"date": 2020,
 			"type": "Personal Project",
 			"title": "2D Fluid Simulation",
@@ -385,27 +407,6 @@
 			"image": "resources/images/projects/Magic_royale.webp",
 			"logo": "resources/svgs/projects/Magic_royale.svg",
 			"categories": ["School"]
-		},
-		{
-			"date": 2021,
-			"type": "Personal Project",
-			"title": "Chess AI",
-			"description": "This program use the Minimax algorithm to choose the best move in chess with a given number of moves in advance. The higher this number, the better its moves will be but the slower it will play...",
-			"tags":
-			[
-				{ "name": "C++", "url": "https://en.wikipedia.org/wiki/C%2B%2B" },
-				{ "name": "SFML", "url": "https://www.sfml-dev.org/index.php" }
-			],
-			"links":
-			[
-				"https://github.com/angeluriot/Chess_AI",
-				"https://github.com/angeluriot/Chess_AI",
-				"none"
-			],
-			"video": "resources/videos/projects/Chess_AI.mp4",
-			"image": "resources/images/projects/Chess_AI.webp",
-			"logo": "resources/svgs/projects/Chess_AI.svg",
-			"categories": ["Personal", "AI"]
 		},
 		{
 			"date": 2019,
