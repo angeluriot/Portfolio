@@ -5,14 +5,14 @@
 			"date": 2023,
 			"type": "Software Engineer",
 			"title": "BlaBlaCar",
-			"description": "Backend development for BlaBlaCar Daily, a dedicated app for short-distance carpooling within the BlaBlaCar ecosystem. My role involves resolving bugs and implementing new features to enhance user experience.",
+			"description": "Backend development for BlaBlaCar, the world's most widely used car-sharing platform, more specifically for BlaBlaCar Daily, a dedicated app for short-distance carpooling. Responsibilities include diagnosing and resolving production issues, delivering end-to-end features from design through deployment with project ownership and stakeholder coordination, improving API performance and reliability to enhance user experience, and ensuring codebase quality through code reviews and refactoring.",
 			"tags":
 			[
 				{ "name": "Python", "url": "https://www.python.org/" },
 				{ "name": "Flask", "url": "https://flask.palletsprojects.com/" },
-				{ "name": "Ruby", "url": "https://www.ruby-lang.org/" },
-				{ "name": "Rails", "url": "https://rubyonrails.org/" },
-				{ "name": "SQL", "url": "https://sql.sh" }
+				{ "name": "PostgreSQL", "url": "https://www.postgresql.org/" },
+				{ "name": "Kubernetes", "url": "https://kubernetes.io/" },
+				{ "name": "GCP", "url": "https://cloud.google.com/" }
 			],
 			"link": "https://www.blablacar.co.uk/",
 			"video": "resources/videos/experience/BlaBlaCar.mp4",
@@ -38,7 +38,7 @@
 		{
 			"date": 2022,
 			"type": "Software Engineer Intern",
-			"title": "Fitthree Pte Ltd",
+			"title": "Fitthree",
 			"description": "Design a system that establish optimized delivery routes for the company's drivers based on a list of orders and a set of constraints. The generated routes will be fed to the tracking management system.",
 			"tags":
 			[
@@ -54,8 +54,8 @@
 		{
 			"date": 2019,
 			"type": "Developer Intern",
-			"title": "C.E.A. Paris-Saclay",
-			"description": "A two months internship at the C.E.A. Paris-Saclay, my assignment was to program a computer simulation predicting the behavior of neutrons in the core of a nuclear reactor.",
+			"title": "CEA Paris-Saclay",
+			"description": "A two months internship at the CEA Paris-Saclay, my assignment was to program a computer simulation predicting the behavior of neutrons in the core of a nuclear reactor.",
 			"tags":
 			[
 				{ "name": "C++", "url": "https://en.wikipedia.org/wiki/C%2B%2B" }
@@ -67,7 +67,7 @@
 		{
 			"date": 2021,
 			"type": "Research Intern",
-			"title": "C.E.E.S.A.R.",
+			"title": "CEESAR",
 			"description": "A one month worker internship where I created a database of autopsy reports and modified high speed crash test footage.",
 			"tags":
 			[

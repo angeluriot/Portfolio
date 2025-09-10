@@ -2,6 +2,199 @@
 	"skills_categories":
 	[
 		{
+			"name" : "Backend",
+			"skills" :
+			[
+				{
+					"name": "Python",
+					"logo": "resources/svgs/skills/Python.svg",
+					"link": "https://www.python.org/"
+				},
+				{
+					"name": "Flask",
+					"logo": "resources/svgs/skills/Flask.svg",
+					"link": "https://flask.palletsprojects.com/"
+				},
+				{
+					"name": "JavaScript",
+					"logo": "resources/svgs/skills/JavaScript.svg",
+					"link": "https://en.wikipedia.org/wiki/JavaScript"
+				},
+				{
+					"name": "TypeScript",
+					"logo": "resources/svgs/skills/TypeScript.svg",
+					"link": "https://www.typescriptlang.org"
+				},
+				{
+					"name": "SQLAlchemy",
+					"logo": "resources/svgs/skills/SQLAlchemy.svg",
+					"link": "https://www.sqlalchemy.org/"
+				},
+				{
+					"name": "NodeJS",
+					"logo": "resources/svgs/skills/NodeJS.svg",
+					"link": "https://nodejs.org/en/"
+				},
+				{
+					"name": "SvelteKit",
+					"logo": "resources/svgs/skills/Svelte.svg",
+					"link": "https://svelte.dev/"
+				},
+				{
+					"name": "Vite",
+					"logo": "resources/svgs/skills/Vite.svg",
+					"link": "https://vitejs.dev/"
+				},
+				{
+					"name": "Unleash",
+					"logo": "resources/svgs/skills/Unleash.svg",
+					"link": "https://www.getunleash.io/"
+				},
+				{
+					"name": "Adyen",
+					"logo": "resources/svgs/skills/Adyen.svg",
+					"link": "https://www.adyen.com/"
+				},
+				{
+					"name": "Ruby",
+					"logo": "resources/svgs/skills/Ruby.svg",
+					"link": "https://www.ruby-lang.org/"
+				},
+				{
+					"name": "Rails",
+					"logo": "resources/svgs/skills/Rails.svg",
+					"link": "https://rubyonrails.org/"
+				},
+				{
+					"name": "FastAPI",
+					"logo": "resources/svgs/skills/FastAPI.svg",
+					"link": "https://fastapi.tiangolo.com/"
+				},
+				{
+					"name": "ExpressJS",
+					"logo": "resources/images/skills/ExpressJS.webp",
+					"link": "http://expressjs.com"
+				},
+				{
+					"name": "C#",
+					"logo": "resources/svgs/skills/C_sharp.svg",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+				},
+				{
+					"name": "Socket.io",
+					"logo": "resources/svgs/skills/Socket_io.svg",
+					"link": "https://socket.io"
+				},
+				{
+					"name": "Stripe",
+					"logo": "resources/svgs/skills/Stripe.svg",
+					"link": "https://stripe.com/"
+				},
+				{
+					"name": "Git",
+					"logo": "resources/svgs/skills/Git.svg",
+					"link": "https://git-scm.com/"
+				},
+				{
+					"name": "Unix",
+					"logo": "resources/svgs/skills/Unix.svg",
+					"link": "https://en.wikipedia.org/wiki/Unix"
+				}
+			]
+		},
+		{
+			"name" : "Data / Monitoring",
+			"skills" :
+			[
+				{
+					"name": "PostgreSQL",
+					"logo": "resources/svgs/skills/PostgreSQL.svg",
+					"link": "https://www.postgresql.org/"
+				},
+				{
+					"name": "Datadog",
+					"logo": "resources/svgs/skills/Datadog.svg",
+					"link": "https://www.datadoghq.com/"
+				},
+				{
+					"name": "Redis",
+					"logo": "resources/svgs/skills/Redis.svg",
+					"link": "https://redis.io/"
+				},
+				{
+					"name": "Prometheus",
+					"logo": "resources/svgs/skills/Prometheus.svg",
+					"link": "https://prometheus.io/"
+				},
+				{
+					"name": "BigQuery",
+					"logo": "resources/svgs/skills/BigQuery.svg",
+					"link": "https://cloud.google.com/bigquery"
+				},
+				{
+					"name": "PagerDuty",
+					"logo": "resources/svgs/skills/PagerDuty.svg",
+					"link": "https://www.pagerduty.com/"
+				},
+				{
+					"name": "Grafana Alerting",
+					"logo": "resources/svgs/skills/Grafana.svg",
+					"link": "https://grafana.com/"
+				},
+				{
+					"name": "New Relic",
+					"logo": "resources/svgs/skills/New_Relic.svg",
+					"link": "https://newrelic.com/"
+				},
+				{
+					"name": "MongoDB",
+					"logo": "resources/svgs/skills/MongoDB.svg",
+					"link": "https://www.mongodb.com"
+				}
+			]
+		},
+		{
+			"name" : "Infrastructure",
+			"skills" :
+			[
+				{
+					"name": "Kubernetes",
+					"logo": "resources/svgs/skills/Kubernetes.svg",
+					"link": "https://kubernetes.io/"
+				},
+				{
+					"name": "Docker",
+					"logo": "resources/svgs/skills/Docker.svg",
+					"link": "https://www.docker.com/"
+				},
+				{
+					"name": "RabbitMQ",
+					"logo": "resources/svgs/skills/RabbitMQ.svg",
+					"link": "https://www.rabbitmq.com/"
+				},
+				{
+					"name": "Kafka",
+					"logo": "resources/svgs/skills/Kafka.svg",
+					"link": "https://kafka.apache.org/"
+				},
+				{
+					"name": "Jenkins",
+					"logo": "resources/svgs/skills/Jenkins.svg",
+					"link": "https://www.jenkins.io/"
+				},
+				{
+					"name": "Google Cloud Platform",
+					"logo": "resources/svgs/skills/GCP.svg",
+					"link": "https://cloud.google.com/"
+				},
+				{
+					"name": "Terraform",
+					"logo": "resources/svgs/skills/Terraform.svg",
+					"link": "https://www.terraform.io/"
+				}
+			]
+		},
+		{
 			"name" : "Software Development",
 			"skills" :
 			[
@@ -114,83 +307,7 @@
 			]
 		},
 		{
-			"name" : "Back-end Web",
-			"skills" :
-			[
-				{
-					"name": "Python",
-					"logo": "resources/svgs/skills/Python.svg",
-					"link": "https://www.python.org/"
-				},
-				{
-					"name": "Flask",
-					"logo": "resources/svgs/skills/Flask.svg",
-					"link": "https://flask.palletsprojects.com/"
-				},
-				{
-					"name": "Ruby",
-					"logo": "resources/svgs/skills/Ruby.svg",
-					"link": "https://www.ruby-lang.org/"
-				},
-				{
-					"name": "Rails",
-					"logo": "resources/svgs/skills/Rails.svg",
-					"link": "https://rubyonrails.org/"
-				},
-				{
-					"name": "JavaScript",
-					"logo": "resources/svgs/skills/JavaScript.svg",
-					"link": "https://en.wikipedia.org/wiki/JavaScript"
-				},
-				{
-					"name": "TypeScript",
-					"logo": "resources/svgs/skills/TypeScript.svg",
-					"link": "https://www.typescriptlang.org"
-				},
-				{
-					"name": "NodeJS",
-					"logo": "resources/svgs/skills/NodeJS.svg",
-					"link": "https://nodejs.org/en/"
-				},
-				{
-					"name": "ExpressJS",
-					"logo": "resources/images/skills/ExpressJS.webp",
-					"link": "http://expressjs.com"
-				},
-				{
-					"name": "C#",
-					"logo": "resources/svgs/skills/C_sharp.svg",
-					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-				},
-				{
-					"name": "Socket.io",
-					"logo": "resources/svgs/skills/Socket_io.svg",
-					"link": "https://socket.io"
-				},
-				{
-					"name": "SQL",
-					"logo": "resources/svgs/skills/Sql.svg",
-					"link": "https://sql.sh"
-				},
-				{
-					"name": "MongoDB",
-					"logo": "resources/svgs/skills/MongoDB.svg",
-					"link": "https://www.mongodb.com"
-				},
-				{
-					"name": "Stripe",
-					"logo": "resources/svgs/skills/Stripe.svg",
-					"link": "https://stripe.com/"
-				},
-				{
-					"name": "Git",
-					"logo": "resources/svgs/skills/Git.svg",
-					"link": "https://git-scm.com/"
-				}
-			]
-		},
-		{
-			"name" : "Front-end Web",
+			"name" : "Frontend (Web)",
 			"skills" :
 			[
 				{
@@ -288,6 +405,11 @@
 					"name": "Keras",
 					"logo": "resources/svgs/skills/Keras.svg",
 					"link": "https://keras.io/"
+				},
+				{
+					"name": "Google Cloud Platform",
+					"logo": "resources/svgs/skills/GCP.svg",
+					"link": "https://cloud.google.com/"
 				}
 			]
 		},
@@ -319,22 +441,6 @@
 					"name": "SolidWorks",
 					"logo": "resources/images/skills/SolidWorks.webp",
 					"link": "https://www.solidworks.com/"
-				}
-			]
-		},
-		{
-			"name" : "Blockchain",
-			"skills" :
-			[
-				{
-					"name": "Solidity",
-					"logo": "resources/svgs/skills/Solidity.svg",
-					"link": "https://soliditylang.org/"
-				},
-				{
-					"name": "Web3.js",
-					"logo": "resources/images/skills/Web3JS.webp",
-					"link": "https://github.com/ChainSafe/web3.js"
 				}
 			]
 		}
