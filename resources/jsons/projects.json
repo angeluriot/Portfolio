@@ -51,7 +51,7 @@
 			"tags":
 			[
 				{ "name": "TypeScript", "url": "https://www.typescriptlang.org/" },
-				{ "name": "NodeJS", "url": "https://nodejs.org/en/" },
+				{ "name": "Node.js", "url": "https://nodejs.org/en/" },
 				{ "name": "Socket.io", "url": "https://socket.io/" },
 				{ "name": "MongoDB", "url": "https://www.mongodb.com/" }
 			],
@@ -208,7 +208,7 @@
 			"tags":
 			[
 				{ "name": "TypeScript", "url": "https://www.typescriptlang.org/" },
-				{ "name": "NodeJS", "url": "https://nodejs.org/en/" }
+				{ "name": "Node.js", "url": "https://nodejs.org/en/" }
 			],
 			"links":
 			[

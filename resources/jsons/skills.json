@@ -31,7 +31,7 @@
 					"link": "https://www.sqlalchemy.org/"
 				},
 				{
-					"name": "NodeJS",
+					"name": "Node.js",
 					"logo": "resources/svgs/skills/NodeJS.svg",
 					"link": "https://nodejs.org/en/"
 				},
@@ -356,12 +356,12 @@
 					"link": "https://vitejs.dev/"
 				},
 				{
-					"name": "ThreeJS",
+					"name": "Three.js",
 					"logo": "resources/svgs/skills/ThreeJS.svg",
 					"link": "https://threejs.org"
 				},
 				{
-					"name": "AnimeJS",
+					"name": "Anime.js",
 					"logo": "resources/images/skills/AnimeJS.webp",
 					"link": "https://animejs.com"
 				},
