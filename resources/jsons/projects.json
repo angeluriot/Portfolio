@@ -2,6 +2,29 @@
 	"projects":
 	[
 		{
+			"date": 2025,
+			"type": "Personal Project",
+			"title": "Papermap",
+			"description": "This project is a collaborative website that provides an overview of scientific literature findings on a wide range of questions by collecting and sorting scientific papers using simple heuristics...",
+			"tags":
+			[
+				{ "name": "TypeScript", "url": "https://www.typescriptlang.org/" },
+				{ "name": "Node.js", "url": "https://nodejs.org/en/" },
+				{ "name": "SvelteKit", "url": "https://svelte.dev/" },
+				{ "name": "Docker", "url": "https://www.docker.com/" }
+			],
+			"links":
+			[
+				"https://papermap.org/",
+				"https://github.com/angeluriot/Papermap",
+				"https://papermap.org/"
+			],
+			"video": "resources/videos/projects/Papermap.mp4",
+			"image": "resources/images/projects/Papermap.webp",
+			"logo": "resources/svgs/projects/Papermap.svg",
+			"categories": ["Personal", "Web"]
+		},
+		{
 			"date": 2024,
 			"type": "Personal Project",
 			"title": "Language model",
